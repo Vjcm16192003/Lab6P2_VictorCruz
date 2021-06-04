@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -23,6 +24,16 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
      */
     public Lab6P2_VictorCruz() {
         initComponents();
+        DefaultComboBoxModel m = (DefaultComboBoxModel) CB_Falcultad.getModel();
+        m.addElement("Salud");
+        m.addElement("Ingenería");
+        m.addElement("Licenciatura");
+        CB_Falcultad.setModel(m);
+        CB_FalcultadAlumnos.setModel(m);
+        DefaultComboBoxModel m1 = (DefaultComboBoxModel) CB_Tiempo.getModel();
+        m1.addElement("Trimestral");
+        m1.addElement("Semestral");
+        CB_Tiempo.setModel(m1);
     }
 
     /**
@@ -147,7 +158,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         JS_Cantalumnos = new javax.swing.JSpinner();
         jLabel33 = new javax.swing.JLabel();
         TF_Sección = new javax.swing.JFormattedTextField();
-        JB_registrar2 = new javax.swing.JButton();
+        JB_AgregarClase = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
         TF_Codigoc = new javax.swing.JFormattedTextField();
         TF_Aula = new javax.swing.JFormattedTextField();
@@ -180,7 +191,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
-        JB_registrar3 = new javax.swing.JButton();
+        JB_AgregarProyectos = new javax.swing.JButton();
         JS_Punta = new javax.swing.JSpinner();
         jLabel47 = new javax.swing.JLabel();
         jPanel14 = new javax.swing.JPanel();
@@ -1054,10 +1065,10 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         jLabel33.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel33.setText("Sección: ");
 
-        JB_registrar2.setText("Registrar");
-        JB_registrar2.addMouseListener(new java.awt.event.MouseAdapter() {
+        JB_AgregarClase.setText("Registrar");
+        JB_AgregarClase.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                JB_registrar2MouseClicked(evt);
+                JB_AgregarClaseMouseClicked(evt);
             }
         });
 
@@ -1099,7 +1110,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
                                 .addComponent(jLabel36, javax.swing.GroupLayout.Alignment.LEADING)))
                         .addGroup(jPanel9Layout.createSequentialGroup()
                             .addGap(102, 102, 102)
-                            .addComponent(JB_registrar2)))
+                            .addComponent(JB_AgregarClase)))
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jLabel32)
                         .addGap(79, 79, 79)
@@ -1140,7 +1151,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
                     .addComponent(jLabel37)
                     .addComponent(TF_Aula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32)
-                .addComponent(JB_registrar2)
+                .addComponent(JB_AgregarClase)
                 .addContainerGap(173, Short.MAX_VALUE))
         );
 
@@ -1184,7 +1195,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Nombre", "Seccion", "Codigo", "Codigo Carrea", "Cantidad Max Alumno", "Num del Aula"
+                "Nombre", "Seccion", "Codigo", "Codigo Carrera", "Cantidad Max Alumno", "Num del Aula"
             }
         ) {
             Class[] types = new Class [] {
@@ -1218,7 +1229,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(61, Short.MAX_VALUE))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Listar", jPanel11);
@@ -1304,7 +1315,12 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         jLabel46.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel46.setText("Cantidad de integrantes: ");
 
-        JB_registrar3.setText("Registrar");
+        JB_AgregarProyectos.setText("Registrar");
+        JB_AgregarProyectos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_AgregarProyectosMouseClicked(evt);
+            }
+        });
 
         jLabel47.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel47.setText("Titulo:");
@@ -1321,7 +1337,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
                         .addComponent(jLabel40))
                     .addGroup(jPanel13Layout.createSequentialGroup()
                         .addGap(111, 111, 111)
-                        .addComponent(JB_registrar3))
+                        .addComponent(JB_AgregarProyectos))
                     .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel13Layout.createSequentialGroup()
                             .addComponent(jLabel38)
@@ -1386,7 +1402,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
                     .addComponent(jLabel38)
                     .addComponent(TF_Fecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32)
-                .addComponent(JB_registrar3)
+                .addComponent(JB_AgregarProyectos)
                 .addContainerGap(108, Short.MAX_VALUE))
         );
 
@@ -1616,7 +1632,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
             .addGroup(jPanel21Layout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(63, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         jTabbedPane6.addTab("Listar", jPanel21);
@@ -1676,8 +1692,6 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
                 .addComponent(jTabbedPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32))
         );
-
-        CB_ClasesAsignadas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         JB_AsignarClases.setText("Asignar Clases");
         JB_AsignarClases.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -2073,30 +2087,30 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void JB_LoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_LoginMouseClicked
-        Administrar_Personas ap=
-                    new Administrar_Personas("./Users.txt");
-            ap.cargarArchivo();
-            int aux=0;
-            for (int i = 0; i < ap.getListaPersonas().size(); i++) {
-            if(ap.getListaPersonas().get(i).getUsername().equalsIgnoreCase("Admin")&&ap.getListaPersonas().get(i).getPassword().equalsIgnoreCase("1234")){
-                aux=1;
-            }else if(ap.getListaPersonas().get(i).getUsername().equalsIgnoreCase(TF_Username.getText())
-                    &&ap.getListaPersonas().get(i).getPassword().equalsIgnoreCase(PF_Password.getText())
-                    && ap.getListaPersonas().get(i) instanceof Docentes){
-                
-                pos=i;
-                aux=2;
-                
-            }else if(ap.getListaPersonas().get(i).getUsername().equalsIgnoreCase(TF_Username.getText())
-                    &&ap.getListaPersonas().get(i).getPassword().equalsIgnoreCase(PF_Password.getText())
-                    && ap.getListaPersonas().get(i) instanceof Alumnos){
-                
-                pos=i;
-                aux=3;
-                
+        Administrar_Personas ap
+                = new Administrar_Personas("./Users.txt");
+        ap.cargarArchivo();
+        int aux = 0;
+        for (int i = 0; i < ap.getListaPersonas().size(); i++) {
+            if (ap.getListaPersonas().get(i).getUsername().equalsIgnoreCase("Admin") && ap.getListaPersonas().get(i).getPassword().equalsIgnoreCase("1234")) {
+                aux = 1;
+            } else if (ap.getListaPersonas().get(i).getUsername().equalsIgnoreCase(TF_Username.getText())
+                    && ap.getListaPersonas().get(i).getPassword().equalsIgnoreCase(PF_Password.getText())
+                    && ap.getListaPersonas().get(i) instanceof Docentes) {
+
+                pos = i;
+                aux = 2;
+
+            } else if (ap.getListaPersonas().get(i).getUsername().equalsIgnoreCase(TF_Username.getText())
+                    && ap.getListaPersonas().get(i).getPassword().equalsIgnoreCase(PF_Password.getText())
+                    && ap.getListaPersonas().get(i) instanceof Alumnos) {
+
+                pos = i;
+                aux = 3;
+
             }//fin de las opciones que validan el login
         }//fin del for que recorre la lista de personas
-        
+
     }//GEN-LAST:event_JB_LoginMouseClicked
 
     private void JB_SalirSistemaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_SalirSistemaMouseClicked
@@ -2148,19 +2162,152 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     }//GEN-LAST:event_JB_SalirCuentaAlumnoMouseClicked
 
     private void JB_ModficarMaestroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModficarMaestroMouseClicked
-        // TODO add your handling code here:
+       try {
+            Administrar_Docentes ac
+                    = new Administrar_Docentes("./Docentes.txt");
+            int p;
+
+            p = CB_ModficarMaestro.getSelectedIndex();
+            ac.cargarArchivo();
+            ac.getListaDocentes().get(p).setFacultad(JOptionPane.showInputDialog("Facultad: "));
+            ac.getListaDocentes().get(p).setNom(JOptionPane.showInputDialog("Nombre del Maestro: "));
+            ac.getListaDocentes().get(p).setApellido(JOptionPane.showInputDialog("Apellido del Maestro: "));
+            ac.getListaDocentes().get(p).setCant_clases(Integer.parseInt(JOptionPane.showInputDialog("Cantidad de Clases: ")));
+            ac.getListaDocentes().get(p).setNum_registro(JOptionPane.showInputDialog("Numero de Registro: "));
+            ac.getListaDocentes().get(p).setTitulo(JOptionPane.showInputDialog("Nacionalidad: "));
+            ac.getListaDocentes().get(p).setTitulo_post(JOptionPane.showInputDialog("Titulo de Postgrado: "));
+            ac.escribirArchivo();
+            
+            DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_ModficarMaestro.getModel();
+            ((Docentes)modelo.getSelectedItem()).setApellido(ac.getListaDocentes().get(p).getApellido());
+            ((Docentes)modelo.getSelectedItem()).setNom(ac.getListaDocentes().get(p).getNom());
+            ((Docentes)modelo.getSelectedItem()).setNum_registro(ac.getListaDocentes().get(p).getNum_registro());
+            ((Docentes)modelo.getSelectedItem()).setFacultad(ac.getListaDocentes().get(p).getFacultad());
+            ((Docentes)modelo.getSelectedItem()).setTitulo(ac.getListaDocentes().get(p).getTitulo());
+            ((Docentes)modelo.getSelectedItem()).setTitulo_post(ac.getListaDocentes().get(p).getTitulo_post());
+            ((Docentes)modelo.getSelectedItem()).setCant_clases(ac.getListaDocentes().get(p).getCant_clases());
+            
+            
+            docentes=ac.getListaDocentes();
+            CB_ModficarMaestro.setModel(modelo);
+            CB_ModficarMaestro1.setModel(modelo);
+            CB_EliminarMaestro.setModel(modelo);
+                    
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JB_ModficarMaestroMouseClicked
 
     private void JB_ELiminarMaestroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ELiminarMaestroMouseClicked
-        // TODO add your handling code here:
+       try {
+            // TODO add your handling code here:
+            Administrar_Alumnos aa=
+                    new Administrar_Alumnos("./Alumnos.txt");
+            int pos;
+            pos= CB_EliminarAlumnos.getSelectedIndex();
+            
+            aa.cargarArchivo();
+            aa.getListaAlumnos().remove(pos);
+            aa.escribirArchivo();
+            
+             DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_EliminarAlumnos.getModel();
+             modelo.removeElementAt(pos);
+             CB_EliminarAlumnos.setModel(modelo);
+             CB_ModificarAlumnos.setModel(modelo);
+             CB_ModificarAlumnos1.setModel(modelo);
+             
+                if (JT_ListarAlumnos.getSelectedRow() >= 0) {
+                    DefaultTableModel modelo1
+                            = (DefaultTableModel) JT_ListarAlumnos.getModel();
+                    modelo1.removeRow(pos);
+                    JT_ListarAlumnos.setModel(modelo1);
+                    JT_ListarAlumnos1.setModel(modelo1);
+                    
+                }
+             alumnos =aa.getListaAlumnos();
+             
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JB_ELiminarMaestroMouseClicked
 
     private void JB_ElminiarAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ElminiarAlumnosMouseClicked
-        // TODO add your handling code here:
+       try {
+            // TODO add your handling code here:
+            Administrar_Docentes ac=
+                    new Administrar_Docentes("./Alumnos.txt");
+            int pos;
+            pos= CB_EliminarMaestro.getSelectedIndex();
+            
+            ac.cargarArchivo();
+            ac.getListaDocentes().remove(pos);
+            ac.escribirArchivo();
+            
+             DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_EliminarMaestro.getModel();
+             modelo.removeElementAt(pos);
+             CB_EliminarMaestro.setModel(modelo);
+             CB_ModficarMaestro.setModel(modelo);
+             CB_ModficarMaestro1.setModel(modelo);
+             
+                if (JT_ListarMaestros.getSelectedRow() >= 0) {
+                    DefaultTableModel modelo1
+                            = (DefaultTableModel) JT_ListarMaestros.getModel();
+                    modelo1.removeRow(pos);
+                    JT_ListarMaestros.setModel(modelo1);
+                    JT_ListarMaestros1.setModel(modelo1);
+                    
+                }
+             docentes =ac.getListaDocentes();
+             
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JB_ElminiarAlumnosMouseClicked
 
     private void JB_ModificarAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModificarAlumnosMouseClicked
-        // TODO add your handling code here:
+       try {
+            Administrar_Alumnos aa
+                    = new Administrar_Alumnos("./Alumnos.txt");
+            int p;
+
+            p = CB_ModificarAlumnos.getSelectedIndex();
+            aa.cargarArchivo();
+            aa.getListaAlumnos().get(p).setFacultad(JOptionPane.showInputDialog("Facultad: "));
+            aa.getListaAlumnos().get(p).setNom(JOptionPane.showInputDialog("Nombre del Alumno: "));
+            aa.getListaAlumnos().get(p).setApellido(JOptionPane.showInputDialog("Apellido del Alumno: "));
+            aa.getListaAlumnos().get(p).setA_carrera(Integer.parseInt(JOptionPane.showInputDialog("A de Carrera: ")));
+            aa.getListaAlumnos().get(p).setNum_registro(JOptionPane.showInputDialog("Numero de Registro: "));
+            aa.getListaAlumnos().get(p).setEdad(Integer.parseInt(JOptionPane.showInputDialog("Edad: ")));
+            aa.getListaAlumnos().get(p).setCarrera(JOptionPane.showInputDialog("Carrera: "));
+            aa.getListaAlumnos().get(p).setID(JOptionPane.showInputDialog("ID: "));
+            aa.getListaAlumnos().get(p).setPromedio(Double.parseDouble(JOptionPane.showInputDialog("Promedio: ")));
+
+            aa.escribirArchivo();
+            
+            DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_ModificarAlumnos.getModel();
+            ((Alumnos)modelo.getSelectedItem()).setApellido(aa.getListaAlumnos().get(p).getApellido());
+            ((Alumnos)modelo.getSelectedItem()).setNom(aa.getListaAlumnos().get(p).getNom());
+            ((Alumnos)modelo.getSelectedItem()).setNum_registro(aa.getListaAlumnos().get(p).getNum_registro());
+            ((Alumnos)modelo.getSelectedItem()).setFacultad(aa.getListaAlumnos().get(p).getFacultad());
+            ((Alumnos)modelo.getSelectedItem()).setA_carrera(aa.getListaAlumnos().get(p).getA_carrera());
+            ((Alumnos)modelo.getSelectedItem()).setEdad(aa.getListaAlumnos().get(p).getEdad());
+            ((Alumnos)modelo.getSelectedItem()).setID(aa.getListaAlumnos().get(p).getID());
+            ((Alumnos)modelo.getSelectedItem()).setPromedio(aa.getListaAlumnos().get(p).getPromedio());
+            
+            
+            
+            alumnos =aa.getListaAlumnos();
+            CB_ModificarAlumnos.setModel(modelo);
+            CB_ModificarAlumnos1.setModel(modelo);
+            CB_EliminarAlumnos.setModel(modelo);
+                    
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JB_ModificarAlumnosMouseClicked
 
     private void JB_ModficarClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModficarClaseMouseClicked
@@ -2206,11 +2353,11 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     private void JB_AgregarDocentesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_AgregarDocentesMouseClicked
         try {
             // TODO add your handling code here:
-            Administrar_Personas ap=
-            new Administrar_Personas("./Users.txt");
+            Administrar_Personas ap
+                    = new Administrar_Personas("./Users.txt");
             ap.cargarArchivo();
-            Administrar_Docentes ad =
-            new Administrar_Docentes ("./Docentes.txt");
+            Administrar_Docentes ad
+                    = new Administrar_Docentes("./Docentes.txt");
             ad.cargarArchivo();
             String nombre;
             String apellido;
@@ -2220,52 +2367,49 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
             String Titulo;
             String Titulo_postgrado;
             int cant_clases;
-            String fac="";
-            nombre=TF_NombreDocentes.getText();
-            apellido=TF_ApellidoDocentes.getText();
-            num_registro=TF_NumRegistroDocente.getText();
-            username=TF_Username.getText();
-            password=TF_PasswordDocente.getText();
-            Titulo=TF_TituloDocente.getText();
-            Titulo_postgrado=TF_TituloPostgrado.getText();
-            cant_clases=(Integer)JS_CantClasesDocente.getValue();
-            Object t=CB_Falcultad.getSelectedItem();
-            fac+=t;
-            Personas pp= new Docentes(Titulo,Titulo_postgrado,cant_clases,fac,nombre,apellido,num_registro,username,password);
-            Docentes dd= new Docentes(Titulo,Titulo_postgrado,cant_clases,fac,nombre,apellido,num_registro,username,password);
+            String fac = "";
+            nombre = TF_NombreDocentes.getText();
+            apellido = TF_ApellidoDocentes.getText();
+            num_registro = TF_NumRegistroDocente.getText();
+            username = TF_Username.getText();
+            password = TF_PasswordDocente.getText();
+            Titulo = TF_TituloDocente.getText();
+            Titulo_postgrado = TF_TituloPostgrado.getText();
+            cant_clases = (Integer) JS_CantClasesDocente.getValue();
+            Object t = CB_Falcultad.getSelectedItem();
+            fac += t;
+            Personas pp = new Docentes(Titulo, Titulo_postgrado, cant_clases, fac, nombre, apellido, num_registro, username, password);
+            Docentes dd = new Docentes(Titulo, Titulo_postgrado, cant_clases, fac, nombre, apellido, num_registro, username, password);
             ap.getListaPersonas().add(pp);
             ad.getListaDocentes().add(dd);
             ap.escribirArchivo();
             ad.escribirArchivo();
-            personas= ap.getListaPersonas();
-            docentes= ad.getListaDocentes();
-            
-             DefaultComboBoxModel modelo
-                = (DefaultComboBoxModel) CB_ModficarMaestro.getModel();
-        modelo.addElement(new Docentes(Titulo,Titulo_postgrado,cant_clases,fac,nombre,apellido,num_registro,username,password));
-        CB_ModficarMaestro.setModel(modelo);
-        CB_EliminarMaestro.setModel(modelo);
-        CB_ModficarMaestro1.setModel(modelo);
-        
-        
-        Docentes doc = new Docentes(Titulo,Titulo_postgrado,cant_clases,fac,nombre,apellido,num_registro,username,password);
-        Object[] newrow = {
-            doc.getNom(),
-            doc.getApellido(),
-            doc.getNum_registro(),
-            doc.getTitulo(),
-            doc.getTitulo_post(),
-            doc.getCant_clases(),
-            doc.getFacultad()
-        };
-        DefaultTableModel modelo1
-                = (DefaultTableModel) JT_ListarMaestros.getModel();
-        modelo1.addRow(newrow);
-        JT_ListarMaestros.setModel(modelo1);
-        JT_ListarMaestros1.setModel(modelo1);
-        
-            
-            
+            personas = ap.getListaPersonas();
+            docentes = ad.getListaDocentes();
+
+            DefaultComboBoxModel modelo
+                    = (DefaultComboBoxModel) CB_ModficarMaestro.getModel();
+            modelo.addElement(new Docentes(Titulo, Titulo_postgrado, cant_clases, fac, nombre, apellido, num_registro, username, password));
+            CB_ModficarMaestro.setModel(modelo);
+            CB_EliminarMaestro.setModel(modelo);
+            CB_ModficarMaestro1.setModel(modelo);
+
+            Docentes doc = new Docentes(Titulo, Titulo_postgrado, cant_clases, fac, nombre, apellido, num_registro, username, password);
+            Object[] newrow = {
+                doc.getNom(),
+                doc.getApellido(),
+                doc.getNum_registro(),
+                doc.getTitulo(),
+                doc.getTitulo_post(),
+                doc.getCant_clases(),
+                doc.getFacultad()
+            };
+            DefaultTableModel modelo1
+                    = (DefaultTableModel) JT_ListarMaestros.getModel();
+            modelo1.addRow(newrow);
+            JT_ListarMaestros.setModel(modelo1);
+            JT_ListarMaestros1.setModel(modelo1);
+
         } catch (IOException ex) {
             Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2278,6 +2422,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         TF_TituloPostgrado.setText("");
         JS_CantClasesDocente.setValue("");
         CB_Falcultad.setSelectedIndex(0);
+        JOptionPane.showMessageDialog(this, "Agregado Exitosamente");
     }//GEN-LAST:event_JB_AgregarDocentesMouseClicked
 
     private void TF_ApellidoDocentesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_ApellidoDocentesActionPerformed
@@ -2289,13 +2434,13 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     }//GEN-LAST:event_JB_AgregarAlumnosActionPerformed
 
     private void JB_AgregarAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_AgregarAlumnosMouseClicked
-       try {
+        try {
             // TODO add your handling code here:
-            Administrar_Personas ap=
-            new Administrar_Personas("./Users.txt");
+            Administrar_Personas ap
+                    = new Administrar_Personas("./Users.txt");
             ap.cargarArchivo();
-            Administrar_Alumnos aa=
-            new Administrar_Alumnos("./Alumnos.txt");
+            Administrar_Alumnos aa
+                    = new Administrar_Alumnos("./Alumnos.txt");
             aa.cargarArchivo();
             String nom;
             String apellido;
@@ -2307,56 +2452,52 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
             String carrera;
             int anos_carrera;
             double promedio;
-            String fac="";
-            nom=TF_NombreAlumno.getText();
-            apellido=TF_ApellidoAlumno.getText();
-            num_reg=TF_Num_regsAlumnos.getText();
-            username=TF_UsernameAlumnos.getText();
-            password=TF_ContraAlumnos.getText();
-            edad=(Integer)JS_edad.getValue();
-            ID=TF_IDAlumnos.getText();
-            carrera=TF_CarreraAlumnos.getText();
-            anos_carrera=(Integer)JS_AnosAlumnos.getValue();
-            promedio=Double.parseDouble(TF_PromedioAlumnos.getText());
-            Object t=CB_Falcultad.getSelectedItem();
-            fac+=t;
-            Personas pp= new Alumnos(edad,ID,carrera,anos_carrera,promedio,fac,nom,apellido,num_reg,username,password);
-            Alumnos dd= new Alumnos(edad,ID,carrera,anos_carrera,promedio,fac,nom,apellido,num_reg,username,password);
+            String fac = "";
+            nom = TF_NombreAlumno.getText();
+            apellido = TF_ApellidoAlumno.getText();
+            num_reg = TF_Num_regsAlumnos.getText();
+            username = TF_UsernameAlumnos.getText();
+            password = TF_ContraAlumnos.getText();
+            edad = (Integer) JS_edad.getValue();
+            ID = TF_IDAlumnos.getText();
+            carrera = TF_CarreraAlumnos.getText();
+            anos_carrera = (Integer) JS_AnosAlumnos.getValue();
+            promedio = Double.parseDouble(TF_PromedioAlumnos.getText());
+            Object t = CB_Falcultad.getSelectedItem();
+            fac += t;
+            Personas pp = new Alumnos(edad, ID, carrera, anos_carrera, promedio, fac, nom, apellido, num_reg, username, password);
+            Alumnos dd = new Alumnos(edad, ID, carrera, anos_carrera, promedio, fac, nom, apellido, num_reg, username, password);
             ap.getListaPersonas().add(pp);
             aa.getListaAlumnos().add(dd);
             ap.escribirArchivo();
             aa.escribirArchivo();
-            personas=ap.getListaPersonas();
-            alumnos=aa.getListaAlumnos();
-            
+            personas = ap.getListaPersonas();
+            alumnos = aa.getListaAlumnos();
+
             DefaultComboBoxModel modelo
-                = (DefaultComboBoxModel) CB_ModificarAlumnos.getModel();
-        modelo.addElement(new Alumnos(edad,ID,carrera,anos_carrera,promedio,fac,nom,apellido,num_reg,username,password));
-        CB_ModificarAlumnos.setModel(modelo);
-        CB_EliminarAlumnos.setModel(modelo);
-        CB_ModificarAlumnos1.setModel(modelo);
-        
-        
-        Alumnos doc = new Alumnos(edad,ID,carrera,anos_carrera,promedio,fac,nom,apellido,num_reg,username,password);
-        Object[] newrow = {
-            doc.getNom(),
-            doc.getApellido(),
-            doc.getNum_registro(),
-            doc.getEdad(),
-            doc.getID(),
-            doc.getCarrera(),
-            doc.getA_carrera(),
-            doc.getPromedio(),
-            doc.getFacultad(),
-            
-        };
-        DefaultTableModel modelo1
-                = (DefaultTableModel) JT_ListarAlumnos.getModel();
-        modelo1.addRow(newrow);
-        JT_ListarAlumnos.setModel(modelo1);
-        JT_ListarAlumnos1.setModel(modelo1);
-            
-            
+                    = (DefaultComboBoxModel) CB_ModificarAlumnos.getModel();
+            modelo.addElement(new Alumnos(edad, ID, carrera, anos_carrera, promedio, fac, nom, apellido, num_reg, username, password));
+            CB_ModificarAlumnos.setModel(modelo);
+            CB_EliminarAlumnos.setModel(modelo);
+            CB_ModificarAlumnos1.setModel(modelo);
+
+            Alumnos alu = new Alumnos(edad, ID, carrera, anos_carrera, promedio, fac, nom, apellido, num_reg, username, password);
+            Object[] newrow = {
+                alu.getNom(),
+                alu.getApellido(),
+                alu.getNum_registro(),
+                alu.getEdad(),
+                alu.getID(),
+                alu.getCarrera(),
+                alu.getA_carrera(),
+                alu.getPromedio(),
+                alu.getFacultad(),};
+            DefaultTableModel modelo1
+                    = (DefaultTableModel) JT_ListarAlumnos.getModel();
+            modelo1.addRow(newrow);
+            JT_ListarAlumnos.setModel(modelo1);
+            JT_ListarAlumnos1.setModel(modelo1);
+
         } catch (IOException ex) {
             Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2370,109 +2511,225 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         TF_TituloPostgrado.setText("");
         TF_PromedioAlumnos.setValue("");
         CB_FalcultadAlumnos.setSelectedIndex(0);
+        JOptionPane.showMessageDialog(this, "Agregado Exitosamente");
     }//GEN-LAST:event_JB_AgregarAlumnosMouseClicked
 
-    private void JB_registrar2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_registrar2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JB_registrar2MouseClicked
+    private void JB_AgregarClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_AgregarClaseMouseClicked
+        try {
+            // TODO add your handling code here:
+            Administrar_Clases ac
+                    = new Administrar_Clases("./Clases.txt");
+            ac.cargarArchivo();
 
-    
+            String nom;
+            String sec;
+            int code1;
+            int code2;
+            int cant_max;
+            int num_aula;
+
+            nom = TF_Nombre2.getText();
+            sec = TF_Sección.getText();
+            code1 = Integer.parseInt(TF_Codigoc.getText());
+            code2 = Integer.parseInt(TF_CodigoCarrera.getText());
+            cant_max = (Integer) JS_Cantalumnos.getValue();
+            num_aula = Integer.parseInt(TF_Aula.getText());
+            Clases cc = new Clases(nom, sec, code1, code2, cant_max, num_aula);
+            ac.getListaClases().add(cc);
+            ac.escribirArchivo();
+            clases = ac.getListaClases();
+            
+            DefaultComboBoxModel modelo
+                    = (DefaultComboBoxModel) CB_ModficarMaestro.getModel();
+            modelo.addElement(new Clases(nom, sec, code1, code2, cant_max, num_aula));
+            CB_ModificarClases.setModel(modelo);
+            CB_EliminarClases.setModel(modelo);
+            CB_ClasesAsignadas.setModel(modelo);
+
+            Clases cla = new Clases(nom, sec, code1, code2, cant_max, num_aula);
+            Object[] newrow = {
+                cla.getNom(),
+                cla.getSec(),
+                cla.getCodigo(),
+                cla.getCodigo_carrera(),
+                cla.getCant_max(),
+                cla.getNum_aula()
+            };
+            DefaultTableModel modelo1
+                    = (DefaultTableModel) JT_ListarClases.getModel();
+            modelo1.addRow(newrow);
+            JT_ListarClases.setModel(modelo1);
+            
+            
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        TF_Nombre2.setText("");
+        TF_Sección.setText("");
+        TF_Codigoc.setText("");
+        TF_CodigoCarrera.setText("");
+        JS_Cantalumnos.setValue(0);
+        TF_Aula.setText("");
+        JOptionPane.showMessageDialog(this, "Agregado Exitosamente");
+    }//GEN-LAST:event_JB_AgregarClaseMouseClicked
+
+    private void JB_AgregarProyectosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_AgregarProyectosMouseClicked
+        try {
+            // TODO add your handling code here:
+            Administrar_Proyectos ap
+                    = new Administrar_Proyectos("./Proyectos.txt");
+            ap.cargarArchivo();
+
+            String Titulo;
+            String descripcion;
+            int puntaaje;
+            int dificultad;
+            String tiempo = "";
+            int intetegrantes;
+            String Fechas;
+
+            Titulo = TF_TituloP.getText();
+            descripcion = TF_Descripción.getText();
+            puntaaje = (Integer) JS_Punta.getValue();
+            dificultad = (Integer) JS_Dificultad.getValue();
+            Object t = CB_Tiempo.getSelectedItem();
+            tiempo += t;
+            intetegrantes = (Integer) JS_Integra.getValue();
+            Fechas = TF_Fecha.getText();
+            Proyectos pp = new Proyectos(Titulo, descripcion, puntaaje, dificultad, tiempo, intetegrantes, Fechas);
+            ap.getListaProyectos().add(pp);
+            ap.escribirArchivo();
+            proyectos = ap.getListaProyectos();
+            
+            DefaultComboBoxModel modelo
+                    = (DefaultComboBoxModel) CB_ModificarProyectos.getModel();
+            modelo.addElement(new Proyectos(Titulo, descripcion, puntaaje, dificultad, tiempo, intetegrantes, Fechas));
+            CB_ModificarProyectos.setModel(modelo);
+            CB_ModificarProyectos1.setModel(modelo);
+            CB_EliminarProyectos.setModel(modelo);
+            CB_EliminarProyectos1.setModel(modelo);
+
+            Proyectos pro = new Proyectos(Titulo, descripcion, puntaaje, dificultad, tiempo, intetegrantes, Fechas);
+            Object[] newrow = {
+                pro.getTitulo(),
+                pro.getDescrip(),
+                pro.getPunta(),
+                pro.getDificultad(),
+                pro.getTiempo(),
+                pro.getCant_max(),
+                pro.getFecha()
+            };
+            DefaultTableModel modelo1
+                    = (DefaultTableModel) JT_ListarProyectos.getModel();
+            modelo1.addRow(newrow);
+            JT_ListarProyectos.setModel(modelo1);
+            JT_ListarProyectos1.setModel(modelo1);
+            JT_ListarProyectosAsignados.setModel(modelo1);
+            
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        TF_TituloP.setText("");
+        TF_Descripción.setText("");
+        JS_Punta.setValue(0);
+        JS_Dificultad.setValue(0);
+        CB_Tiempo.setSelectedIndex(0);
+        JS_Integra.setValue(0);
+        TF_Fecha.setText("");
+        JOptionPane.showMessageDialog(this, "Agregado Exitosamente");
+    }//GEN-LAST:event_JB_AgregarProyectosMouseClicked
+
     public void AdminMaestros() {
         JD_AdministracionMaestros.pack();
         JD_AdministracionMaestros.setModal(true);
         JD_AdministracionMaestros.setLocationRelativeTo(this);
         JD_AdministracionMaestros.setVisible(true);
     }//fin del llamado del JDialog
-    
+
     public void AdminClases() {
         JD_AdministracionClases.pack();
         JD_AdministracionClases.setModal(true);
         JD_AdministracionClases.setLocationRelativeTo(this);
         JD_AdministracionClases.setVisible(true);
     }//fin del llamado del JDialog
-    
+
     public void AdminProyectos() {
         JD_AdminstracionProyectos.pack();
         JD_AdminstracionProyectos.setModal(true);
         JD_AdminstracionProyectos.setLocationRelativeTo(this);
         JD_AdminstracionProyectos.setVisible(true);
     }//fin del llamado del JDialog
-    
+
     public void AdminAlumnos() {
         JD_AdministracionAlumnos.pack();
         JD_AdministracionAlumnos.setModal(true);
         JD_AdministracionAlumnos.setLocationRelativeTo(this);
         JD_AdministracionAlumnos.setVisible(true);
     }//fin del llamado del JDialog
-    
+
     public void MenuAdmin() {
         JD_MenuAdmin.pack();
         JD_MenuAdmin.setModal(true);
         JD_MenuAdmin.setLocationRelativeTo(this);
         JD_MenuAdmin.setVisible(true);
     }//fin del llamado del JDialog
-    
+
     public void MenuMaestro() {
         JD_MenuMaestro.pack();
         JD_MenuMaestro.setModal(true);
         JD_MenuMaestro.setLocationRelativeTo(this);
         JD_MenuMaestro.setVisible(true);
     }//fin del llamado del JDialog
-    
+
     public void MenuAlumnos() {
         JD_MenuAlumno.pack();
         JD_MenuAlumno.setModal(true);
         JD_MenuAlumno.setLocationRelativeTo(this);
         JD_MenuAlumno.setVisible(true);
     }//fin del llamado del JDialog
-    
-     public void Matricula() {
+
+    public void Matricula() {
         JD_MatriculaAlumnos.pack();
         JD_MatriculaAlumnos.setModal(true);
         JD_MatriculaAlumnos.setLocationRelativeTo(this);
         JD_MatriculaAlumnos.setVisible(true);
     }//fin del llamado del JDialog
-    
+
     public void ClasesAsignadas() {
         JD_ClasesAsignadasMaestros.pack();
         JD_ClasesAsignadasMaestros.setModal(true);
         JD_ClasesAsignadasMaestros.setLocationRelativeTo(this);
         JD_ClasesAsignadasMaestros.setVisible(true);
     }//fin del llamado del JDialog
-    
+
     public void CRUDMaestroProyecto() {
         JD_CrudMaestroProyecto.pack();
         JD_CrudMaestroProyecto.setModal(true);
         JD_CrudMaestroProyecto.setLocationRelativeTo(this);
         JD_CrudMaestroProyecto.setVisible(true);
     }//fin del llamado del JDialog
-    
+
     public void ModificarListarAlumnos() {
         JD_ListarModficarAlumnos.pack();
         JD_ListarModficarAlumnos.setModal(true);
         JD_ListarModficarAlumnos.setLocationRelativeTo(this);
         JD_ListarModficarAlumnos.setVisible(true);
     }//fin del llamado del JDialog
-    
+
     public void InfoProyectosAlumnos() {
         JD_VerInfoProyectos.pack();
         JD_VerInfoProyectos.setModal(true);
         JD_VerInfoProyectos.setLocationRelativeTo(this);
         JD_VerInfoProyectos.setVisible(true);
     }//fin del llamado del JDialog
-    
+
     public void ModificarListarMaestros() {
         JD_ListarModificarMaestros.pack();
         JD_ListarModificarMaestros.setModal(true);
         JD_ListarModificarMaestros.setLocationRelativeTo(this);
         JD_ListarModificarMaestros.setVisible(true);
     }//fin del llamado del JDialog
-    
-    
-    
-    
-    
-    
+
     /**
      * @param args the command line arguments
      */
@@ -2528,7 +2785,9 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> CB_ProyectosAsignadosClase;
     private javax.swing.JComboBox<String> CB_Tiempo;
     private javax.swing.JButton JB_AgregarAlumnos;
+    private javax.swing.JButton JB_AgregarClase;
     private javax.swing.JButton JB_AgregarDocentes;
+    private javax.swing.JButton JB_AgregarProyectos;
     private javax.swing.JButton JB_AsignarClases;
     private javax.swing.JButton JB_ELiminarMaestro;
     private javax.swing.JButton JB_EliminarProyectos;
@@ -2549,8 +2808,6 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     private javax.swing.JButton JB_SalirCuentaMaestro;
     private javax.swing.JButton JB_SalirSistema;
     private javax.swing.JButton JB_SalirSistemaAdmin;
-    private javax.swing.JButton JB_registrar2;
-    private javax.swing.JButton JB_registrar3;
     private javax.swing.JDialog JD_AdministracionAlumnos;
     private javax.swing.JDialog JD_AdministracionClases;
     private javax.swing.JDialog JD_AdministracionMaestros;
@@ -2717,10 +2974,10 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     private javax.swing.JToolBar jToolBar2;
     private javax.swing.JToolBar jToolBar3;
     // End of variables declaration//GEN-END:variables
-ArrayList<Personas>personas=new ArrayList();
-ArrayList<Docentes>docentes=new ArrayList();
-ArrayList<Alumnos>alumnos=new ArrayList();
-ArrayList<Proyectos>proyectos=new ArrayList();
-ArrayList<Clases> clases =new ArrayList();
-int pos=0;
+ArrayList<Personas> personas = new ArrayList();
+    ArrayList<Docentes> docentes = new ArrayList();
+    ArrayList<Alumnos> alumnos = new ArrayList();
+    ArrayList<Proyectos> proyectos = new ArrayList();
+    ArrayList<Clases> clases = new ArrayList();
+    int pos = 0;
 }

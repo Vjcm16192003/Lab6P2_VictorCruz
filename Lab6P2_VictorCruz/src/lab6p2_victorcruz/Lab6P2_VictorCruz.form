@@ -1473,7 +1473,7 @@
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
-                                      <Component id="JB_registrar2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="JB_AgregarClase" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
@@ -1527,7 +1527,7 @@
                               <Component id="TF_Aula" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="JB_registrar2" min="-2" max="-2" attributes="0"/>
+                          <Component id="JB_AgregarClase" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="173" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -1566,12 +1566,12 @@
                 </Component>
                 <Component class="javax.swing.JFormattedTextField" name="TF_Secci&#xf3;n">
                 </Component>
-                <Component class="javax.swing.JButton" name="JB_registrar2">
+                <Component class="javax.swing.JButton" name="JB_AgregarClase">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Registrar"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="JB_registrar2MouseClicked"/>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="JB_AgregarClaseMouseClicked"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel34">
@@ -1696,7 +1696,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                           <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="61" max="32767" attributes="0"/>
+                          <EmptySpace pref="63" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1716,7 +1716,7 @@
                             <Column editable="false" title="Nombre" type="java.lang.String"/>
                             <Column editable="false" title="Seccion" type="java.lang.String"/>
                             <Column editable="false" title="Codigo" type="java.lang.Integer"/>
-                            <Column editable="false" title="Codigo Carrea" type="java.lang.Integer"/>
+                            <Column editable="false" title="Codigo Carrera" type="java.lang.Integer"/>
                             <Column editable="false" title="Cantidad Max Alumno" type="java.lang.Integer"/>
                             <Column editable="false" title="Num del Aula" type="java.lang.Integer"/>
                           </Table>
@@ -1891,7 +1891,7 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
-                                  <Component id="JB_registrar3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="JB_AgregarProyectos" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
@@ -1975,7 +1975,7 @@
                               <Component id="TF_Fecha" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="JB_registrar3" min="-2" max="-2" attributes="0"/>
+                          <Component id="JB_AgregarProyectos" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="108" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -2058,10 +2058,13 @@
                     <Property name="text" type="java.lang.String" value="Cantidad de integrantes: "/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="JB_registrar3">
+                <Component class="javax.swing.JButton" name="JB_AgregarProyectos">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Registrar"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="JB_AgregarProyectosMouseClicked"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JSpinner" name="JS_Punta">
                 </Component>
@@ -2453,7 +2456,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                           <Component id="jScrollPane7" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="63" max="32767" attributes="0"/>
+                          <EmptySpace pref="61" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2627,12 +2630,7 @@
         <Component class="javax.swing.JComboBox" name="CB_ClasesAsignadas">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value="Item 1"/>
-                <StringItem index="1" value="Item 2"/>
-                <StringItem index="2" value="Item 3"/>
-                <StringItem index="3" value="Item 4"/>
-              </StringArray>
+              <StringArray count="0"/>
             </Property>
           </Properties>
           <AuxValues>

@@ -16,11 +16,11 @@ import java.util.Scanner;
  *
  * @author Victor Jafet Cruz
  */
-public class Adminstrar_Clase {
+public class Administrar_Clases {
     private ArrayList<Clases> listaClases = new ArrayList();
     private File archivo = null;
 //Constructor
-    public Adminstrar_Clase(String path) {
+    public Administrar_Clases(String path) {
         archivo= new File(path);
     }
     //Mutador
