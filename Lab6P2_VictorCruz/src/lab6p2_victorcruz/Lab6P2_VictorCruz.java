@@ -48,6 +48,8 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         JMI_ProyectosMaestro = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
         JMI_VerClasesAsignadas = new javax.swing.JMenuItem();
+        jMenu10 = new javax.swing.JMenu();
+        JMI_ModListarInfoMaestro = new javax.swing.JMenuItem();
         JD_MenuAlumno = new javax.swing.JDialog();
         jToolBar1 = new javax.swing.JToolBar();
         JB_SalirCuentaAlumno = new javax.swing.JButton();
@@ -62,35 +64,95 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        CB_ModficarMaestro = new javax.swing.JComboBox<>();
+        JB_ModficarMaestro = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        JT_ListarMaestros = new javax.swing.JTable();
         jPanel4 = new javax.swing.JPanel();
+        CB_EliminarMaestro = new javax.swing.JComboBox<>();
+        JB_ELiminarMaestro = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         JD_AdministracionAlumnos = new javax.swing.JDialog();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
+        CB_ModificarAlumnos = new javax.swing.JComboBox<>();
+        JB_ModificarAlumnos = new javax.swing.JButton();
         jPanel7 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        JT_ListarAlumnos = new javax.swing.JTable();
         jPanel8 = new javax.swing.JPanel();
+        CB_EliminarAlumnos = new javax.swing.JComboBox<>();
+        JB_ElminiarAlumnos = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         JD_AdministracionClases = new javax.swing.JDialog();
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jPanel9 = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
+        CB_ModificarClases = new javax.swing.JComboBox<>();
+        JB_ModficarClase = new javax.swing.JButton();
         jPanel11 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        JT_ListarClases = new javax.swing.JTable();
         jPanel12 = new javax.swing.JPanel();
+        CB_EliminarClases = new javax.swing.JComboBox<>();
+        JB_ElminarClases = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         JD_AdminstracionProyectos = new javax.swing.JDialog();
         jTabbedPane4 = new javax.swing.JTabbedPane();
         jPanel13 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
+        CB_ModificarProyectos = new javax.swing.JComboBox<>();
+        JB_ModificarProyectos = new javax.swing.JButton();
         jPanel15 = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        JT_ListarProyectos = new javax.swing.JTable();
         jPanel16 = new javax.swing.JPanel();
+        CB_EliminarProyectos = new javax.swing.JComboBox<>();
+        JB_EliminarProyectos = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         JD_CrudMaestroProyecto = new javax.swing.JDialog();
+        jLabel9 = new javax.swing.JLabel();
+        jTabbedPane6 = new javax.swing.JTabbedPane();
+        jPanel17 = new javax.swing.JPanel();
+        jPanel20 = new javax.swing.JPanel();
+        CB_ModificarProyectos1 = new javax.swing.JComboBox<>();
+        JB_ModificarProyectos1 = new javax.swing.JButton();
+        jPanel21 = new javax.swing.JPanel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        JT_ListarProyectos1 = new javax.swing.JTable();
+        jPanel22 = new javax.swing.JPanel();
+        CB_EliminarProyectos1 = new javax.swing.JComboBox<>();
+        JB_EliminarProyectos1 = new javax.swing.JButton();
         JD_ClasesAsignadasMaestros = new javax.swing.JDialog();
+        CB_ClasesAsignadas = new javax.swing.JComboBox<>();
+        JB_AsignarClases = new javax.swing.JButton();
         JD_MatriculaAlumnos = new javax.swing.JDialog();
+        CB_MatriculaAlumno = new javax.swing.JComboBox<>();
+        JB_MatricularAlumno = new javax.swing.JButton();
         JD_VerInfoProyectos = new javax.swing.JDialog();
+        CB_ProyectosAsignadosClase = new javax.swing.JComboBox<>();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        JT_ListarProyectosAsignados = new javax.swing.JTable();
         JD_ListarModficarAlumnos = new javax.swing.JDialog();
+        jLabel8 = new javax.swing.JLabel();
+        jTabbedPane5 = new javax.swing.JTabbedPane();
+        jPanel18 = new javax.swing.JPanel();
+        CB_ModificarAlumnos1 = new javax.swing.JComboBox<>();
+        JB_ModificarAlumnos1 = new javax.swing.JButton();
+        jPanel19 = new javax.swing.JPanel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        JT_ListarAlumnos1 = new javax.swing.JTable();
+        JD_ListarModificarMaestros = new javax.swing.JDialog();
+        jTabbedPane7 = new javax.swing.JTabbedPane();
+        jPanel24 = new javax.swing.JPanel();
+        CB_ModficarMaestro1 = new javax.swing.JComboBox<>();
+        JB_ModficarMaestro1 = new javax.swing.JButton();
+        jPanel25 = new javax.swing.JPanel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        JT_ListarMaestros1 = new javax.swing.JTable();
+        jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -215,6 +277,18 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
 
         jMenuBar2.add(jMenu6);
 
+        jMenu10.setText("Modicar Listar Info");
+
+        JMI_ModListarInfoMaestro.setText("Mod/Listar Info Maestro");
+        JMI_ModListarInfoMaestro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_ModListarInfoMaestroActionPerformed(evt);
+            }
+        });
+        jMenu10.add(JMI_ModListarInfoMaestro);
+
+        jMenuBar2.add(jMenu10);
+
         JD_MenuMaestro.setJMenuBar(jMenuBar2);
 
         javax.swing.GroupLayout JD_MenuMaestroLayout = new javax.swing.GroupLayout(JD_MenuMaestro.getContentPane());
@@ -313,41 +387,115 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Agregar", jPanel1);
 
+        JB_ModficarMaestro.setText("MODFICAR MAESTRO");
+        JB_ModficarMaestro.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_ModficarMaestroMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 933, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(59, 59, 59)
+                        .addComponent(CB_ModficarMaestro, javax.swing.GroupLayout.PREFERRED_SIZE, 838, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(359, 359, 359)
+                        .addComponent(JB_ModficarMaestro, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(CB_ModficarMaestro, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(110, 110, 110)
+                .addComponent(JB_ModficarMaestro, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(269, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Modficar", jPanel2);
+
+        JT_ListarMaestros.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Apellido", "Numero Registro", "Titulo", "Postgrado", "Cantidad Clases", "Facultad"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(JT_ListarMaestros);
+        if (JT_ListarMaestros.getColumnModel().getColumnCount() > 0) {
+            JT_ListarMaestros.getColumnModel().getColumn(6).setHeaderValue("Años en Carrera");
+        }
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 933, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 880, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Listar", jPanel3);
+
+        JB_ELiminarMaestro.setText("ELIMINAR MAESTRO");
+        JB_ELiminarMaestro.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_ELiminarMaestroMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 933, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addComponent(CB_EliminarMaestro, javax.swing.GroupLayout.PREFERRED_SIZE, 841, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(344, 344, 344)
+                        .addComponent(JB_ELiminarMaestro, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(CB_EliminarMaestro, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(96, 96, 96)
+                .addComponent(JB_ELiminarMaestro, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(292, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("ELiminar", jPanel4);
@@ -382,50 +530,125 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGap(0, 945, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGap(0, 525, Short.MAX_VALUE)
         );
 
         jTabbedPane2.addTab("Agregar", jPanel5);
+
+        JB_ModificarAlumnos.setText("MODFICAR ALUMNOS");
+        JB_ModificarAlumnos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_ModificarAlumnosMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addContainerGap(94, Short.MAX_VALUE)
+                .addComponent(CB_ModificarAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(76, 76, 76))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(394, 394, 394)
+                .addComponent(JB_ModificarAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(CB_ModificarAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(91, 91, 91)
+                .addComponent(JB_ModificarAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(296, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Modficar", jPanel6);
+
+        JT_ListarAlumnos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Apellido", "Numero Registro", "Edad", "ID", "Carrera", "Años en Carrera", "Promedio", "Facultad"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Object.class, java.lang.Object.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, true, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane2.setViewportView(JT_ListarAlumnos);
+        if (JT_ListarAlumnos.getColumnModel().getColumnCount() > 0) {
+            JT_ListarAlumnos.getColumnModel().getColumn(6).setHeaderValue("Años en Carrera");
+            JT_ListarAlumnos.getColumnModel().getColumn(7).setHeaderValue("Promedio");
+            JT_ListarAlumnos.getColumnModel().getColumn(8).setHeaderValue("Facultad");
+        }
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 932, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(55, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Listar", jPanel7);
+
+        JB_ElminiarAlumnos.setText("ELiminar Alumno");
+        JB_ElminiarAlumnos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_ElminiarAlumnosMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(83, 83, 83)
+                        .addComponent(CB_EliminarAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, 807, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(340, 340, 340)
+                        .addComponent(JB_ElminiarAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(CB_EliminarAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(82, 82, 82)
+                .addComponent(JB_ElminiarAlumnos, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(265, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("ELiminar", jPanel8);
@@ -440,10 +663,10 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
             .addGroup(JD_AdministracionAlumnosLayout.createSequentialGroup()
                 .addGap(314, 314, 314)
                 .addComponent(jLabel5)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(370, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_AdministracionAlumnosLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 957, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 947, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         JD_AdministracionAlumnosLayout.setVerticalGroup(
@@ -451,8 +674,8 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_AdministracionAlumnosLayout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 551, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32))
         );
 
@@ -469,41 +692,112 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
 
         jTabbedPane3.addTab("Agregar", jPanel9);
 
+        JB_ModficarClase.setText("MODIFICAR CLASE");
+        JB_ModficarClase.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_ModficarClaseMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(73, 73, 73)
+                        .addComponent(CB_ModificarClases, javax.swing.GroupLayout.PREFERRED_SIZE, 812, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGap(379, 379, 379)
+                        .addComponent(JB_ModficarClase, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(70, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(CB_ModificarClases, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(85, 85, 85)
+                .addComponent(JB_ModficarClase, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(303, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Modficar", jPanel10);
+
+        JT_ListarClases.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Seccion", "Codigo", "Codigo Carrea", "Cantidad Max Alumno", "Num del Aula"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane3.setViewportView(JT_ListarClases);
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 932, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Listar", jPanel11);
+
+        JB_ElminarClases.setText("Eliminar Clases");
+        JB_ElminarClases.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_ElminarClasesMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGap(99, 99, 99)
+                        .addComponent(CB_EliminarClases, javax.swing.GroupLayout.PREFERRED_SIZE, 786, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGap(362, 362, 362)
+                        .addComponent(JB_ElminarClases, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(70, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(CB_EliminarClases, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(82, 82, 82)
+                .addComponent(JB_ElminarClases, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(322, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("ELiminar", jPanel12);
@@ -516,13 +810,14 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         JD_AdministracionClasesLayout.setHorizontalGroup(
             JD_AdministracionClasesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(JD_AdministracionClasesLayout.createSequentialGroup()
-                .addGap(314, 314, 314)
-                .addComponent(jLabel6)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_AdministracionClasesLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 957, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGroup(JD_AdministracionClasesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(JD_AdministracionClasesLayout.createSequentialGroup()
+                        .addGap(314, 314, 314)
+                        .addComponent(jLabel6))
+                    .addGroup(JD_AdministracionClasesLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 957, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         JD_AdministracionClasesLayout.setVerticalGroup(
             JD_AdministracionClasesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -538,7 +833,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGap(0, 991, Short.MAX_VALUE)
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -547,44 +842,115 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
 
         jTabbedPane4.addTab("Agregar", jPanel13);
 
+        JB_ModificarProyectos.setText("Modificar Proyectos");
+        JB_ModificarProyectos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_ModificarProyectosMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addGap(111, 111, 111)
+                        .addComponent(CB_ModificarProyectos, javax.swing.GroupLayout.PREFERRED_SIZE, 764, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addGap(391, 391, 391)
+                        .addComponent(JB_ModificarProyectos, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(116, Short.MAX_VALUE))
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(CB_ModificarProyectos, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(106, 106, 106)
+                .addComponent(JB_ModificarProyectos, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(275, Short.MAX_VALUE))
         );
 
         jTabbedPane4.addTab("Modficar", jPanel14);
+
+        JT_ListarProyectos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Titulo", "Descripcion", "Puntaje", "Dificultad", "Tiempo", "Cantidad Maxima de Integrantes", "Fecha"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane4.setViewportView(JT_ListarProyectos);
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
         jPanel15Layout.setHorizontalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 979, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         jTabbedPane4.addTab("Listar", jPanel15);
+
+        JB_EliminarProyectos.setText("Eliminar Proyectos");
+        JB_EliminarProyectos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_EliminarProyectosMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 955, Short.MAX_VALUE)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(95, 95, 95)
+                        .addComponent(CB_EliminarProyectos, javax.swing.GroupLayout.PREFERRED_SIZE, 773, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(404, 404, 404)
+                        .addComponent(JB_EliminarProyectos, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(123, Short.MAX_VALUE))
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 531, Short.MAX_VALUE)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(CB_EliminarProyectos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(109, 109, 109)
+                .addComponent(JB_EliminarProyectos, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(308, Short.MAX_VALUE))
         );
 
-        jTabbedPane4.addTab("ELiminar", jPanel16);
+        jTabbedPane4.addTab("Eliminar", jPanel16);
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel7.setText("Administracion de Proyectos");
@@ -596,11 +962,11 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
             .addGroup(JD_AdminstracionProyectosLayout.createSequentialGroup()
                 .addGap(314, 314, 314)
                 .addComponent(jLabel7)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(418, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_AdminstracionProyectosLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jTabbedPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 957, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jTabbedPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 993, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
         );
         JD_AdminstracionProyectosLayout.setVerticalGroup(
             JD_AdminstracionProyectosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -612,59 +978,477 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
                 .addGap(32, 32, 32))
         );
 
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel9.setText("Administracion de Proyectos");
+
+        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
+        jPanel17.setLayout(jPanel17Layout);
+        jPanel17Layout.setHorizontalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 991, Short.MAX_VALUE)
+        );
+        jPanel17Layout.setVerticalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 531, Short.MAX_VALUE)
+        );
+
+        jTabbedPane6.addTab("Agregar", jPanel17);
+
+        JB_ModificarProyectos1.setText("Modificar Proyectos");
+        JB_ModificarProyectos1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_ModificarProyectos1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
+        jPanel20.setLayout(jPanel20Layout);
+        jPanel20Layout.setHorizontalGroup(
+            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel20Layout.createSequentialGroup()
+                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel20Layout.createSequentialGroup()
+                        .addGap(111, 111, 111)
+                        .addComponent(CB_ModificarProyectos1, javax.swing.GroupLayout.PREFERRED_SIZE, 764, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel20Layout.createSequentialGroup()
+                        .addGap(391, 391, 391)
+                        .addComponent(JB_ModificarProyectos1, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(116, Short.MAX_VALUE))
+        );
+        jPanel20Layout.setVerticalGroup(
+            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel20Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(CB_ModificarProyectos1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(106, 106, 106)
+                .addComponent(JB_ModificarProyectos1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(275, Short.MAX_VALUE))
+        );
+
+        jTabbedPane6.addTab("Modficar", jPanel20);
+
+        JT_ListarProyectos1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Titulo", "Descripcion", "Puntaje", "Dificultad", "Tiempo", "Cantidad Maxima de Integrantes", "Fecha"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane7.setViewportView(JT_ListarProyectos1);
+
+        javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
+        jPanel21.setLayout(jPanel21Layout);
+        jPanel21Layout.setHorizontalGroup(
+            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel21Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 979, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel21Layout.setVerticalGroup(
+            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel21Layout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(63, Short.MAX_VALUE))
+        );
+
+        jTabbedPane6.addTab("Listar", jPanel21);
+
+        JB_EliminarProyectos1.setText("Eliminar Proyectos");
+        JB_EliminarProyectos1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_EliminarProyectos1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
+        jPanel22.setLayout(jPanel22Layout);
+        jPanel22Layout.setHorizontalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel22Layout.createSequentialGroup()
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel22Layout.createSequentialGroup()
+                        .addGap(95, 95, 95)
+                        .addComponent(CB_EliminarProyectos1, javax.swing.GroupLayout.PREFERRED_SIZE, 773, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel22Layout.createSequentialGroup()
+                        .addGap(404, 404, 404)
+                        .addComponent(JB_EliminarProyectos1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(123, Short.MAX_VALUE))
+        );
+        jPanel22Layout.setVerticalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel22Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(CB_EliminarProyectos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(109, 109, 109)
+                .addComponent(JB_EliminarProyectos1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(308, Short.MAX_VALUE))
+        );
+
+        jTabbedPane6.addTab("Eliminar", jPanel22);
+
         javax.swing.GroupLayout JD_CrudMaestroProyectoLayout = new javax.swing.GroupLayout(JD_CrudMaestroProyecto.getContentPane());
         JD_CrudMaestroProyecto.getContentPane().setLayout(JD_CrudMaestroProyectoLayout);
         JD_CrudMaestroProyectoLayout.setHorizontalGroup(
             JD_CrudMaestroProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(JD_CrudMaestroProyectoLayout.createSequentialGroup()
+                .addGap(314, 314, 314)
+                .addComponent(jLabel9)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_CrudMaestroProyectoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 993, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
         );
         JD_CrudMaestroProyectoLayout.setVerticalGroup(
             JD_CrudMaestroProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_CrudMaestroProyectoLayout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
         );
+
+        CB_ClasesAsignadas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        JB_AsignarClases.setText("Asignar Clases");
+        JB_AsignarClases.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_AsignarClasesMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout JD_ClasesAsignadasMaestrosLayout = new javax.swing.GroupLayout(JD_ClasesAsignadasMaestros.getContentPane());
         JD_ClasesAsignadasMaestros.getContentPane().setLayout(JD_ClasesAsignadasMaestrosLayout);
         JD_ClasesAsignadasMaestrosLayout.setHorizontalGroup(
             JD_ClasesAsignadasMaestrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(JD_ClasesAsignadasMaestrosLayout.createSequentialGroup()
+                .addGroup(JD_ClasesAsignadasMaestrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(JD_ClasesAsignadasMaestrosLayout.createSequentialGroup()
+                        .addGap(157, 157, 157)
+                        .addComponent(CB_ClasesAsignadas, javax.swing.GroupLayout.PREFERRED_SIZE, 547, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(JD_ClasesAsignadasMaestrosLayout.createSequentialGroup()
+                        .addGap(337, 337, 337)
+                        .addComponent(JB_AsignarClases)))
+                .addContainerGap(174, Short.MAX_VALUE))
         );
         JD_ClasesAsignadasMaestrosLayout.setVerticalGroup(
             JD_ClasesAsignadasMaestrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(JD_ClasesAsignadasMaestrosLayout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(CB_ClasesAsignadas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(109, 109, 109)
+                .addComponent(JB_AsignarClases)
+                .addContainerGap(318, Short.MAX_VALUE))
         );
+
+        JB_MatricularAlumno.setText("Matricular a la Clase");
 
         javax.swing.GroupLayout JD_MatriculaAlumnosLayout = new javax.swing.GroupLayout(JD_MatriculaAlumnos.getContentPane());
         JD_MatriculaAlumnos.getContentPane().setLayout(JD_MatriculaAlumnosLayout);
         JD_MatriculaAlumnosLayout.setHorizontalGroup(
             JD_MatriculaAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(JD_MatriculaAlumnosLayout.createSequentialGroup()
+                .addGroup(JD_MatriculaAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(JD_MatriculaAlumnosLayout.createSequentialGroup()
+                        .addGap(153, 153, 153)
+                        .addComponent(CB_MatriculaAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(JD_MatriculaAlumnosLayout.createSequentialGroup()
+                        .addGap(295, 295, 295)
+                        .addComponent(JB_MatricularAlumno)))
+                .addContainerGap(120, Short.MAX_VALUE))
         );
         JD_MatriculaAlumnosLayout.setVerticalGroup(
             JD_MatriculaAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(JD_MatriculaAlumnosLayout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(CB_MatriculaAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(108, 108, 108)
+                .addComponent(JB_MatricularAlumno)
+                .addContainerGap(254, Short.MAX_VALUE))
         );
+
+        JT_ListarProyectosAsignados.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Titulo", "Descripcion", "Puntaje", "Dificultad", "Tiempo", "Cantidad Maxima de Integrantes", "Fecha"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane5.setViewportView(JT_ListarProyectosAsignados);
 
         javax.swing.GroupLayout JD_VerInfoProyectosLayout = new javax.swing.GroupLayout(JD_VerInfoProyectos.getContentPane());
         JD_VerInfoProyectos.getContentPane().setLayout(JD_VerInfoProyectosLayout);
         JD_VerInfoProyectosLayout.setHorizontalGroup(
             JD_VerInfoProyectosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(JD_VerInfoProyectosLayout.createSequentialGroup()
+                .addGap(194, 194, 194)
+                .addComponent(CB_ProyectosAsignadosClase, javax.swing.GroupLayout.PREFERRED_SIZE, 432, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(297, Short.MAX_VALUE))
+            .addGroup(JD_VerInfoProyectosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(JD_VerInfoProyectosLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 911, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         JD_VerInfoProyectosLayout.setVerticalGroup(
             JD_VerInfoProyectosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(JD_VerInfoProyectosLayout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(CB_ProyectosAsignadosClase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(575, Short.MAX_VALUE))
+            .addGroup(JD_VerInfoProyectosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(JD_VerInfoProyectosLayout.createSequentialGroup()
+                    .addGap(99, 99, 99)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(102, Short.MAX_VALUE)))
         );
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel8.setText("Administracion de Alumnos");
+
+        JB_ModificarAlumnos1.setText("MODFICAR ALUMNOS");
+        JB_ModificarAlumnos1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_ModificarAlumnos1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
+        jPanel18.setLayout(jPanel18Layout);
+        jPanel18Layout.setHorizontalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
+                .addContainerGap(94, Short.MAX_VALUE)
+                .addComponent(CB_ModificarAlumnos1, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(76, 76, 76))
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addGap(394, 394, 394)
+                .addComponent(JB_ModificarAlumnos1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel18Layout.setVerticalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(CB_ModificarAlumnos1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(91, 91, 91)
+                .addComponent(JB_ModificarAlumnos1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(296, Short.MAX_VALUE))
+        );
+
+        jTabbedPane5.addTab("Modficar", jPanel18);
+
+        JT_ListarAlumnos1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Apellido", "Numero Registro", "Edad", "ID", "Carrera", "Años en Carrera", "Promedio", "Facultad"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Object.class, java.lang.Object.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, true, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane6.setViewportView(JT_ListarAlumnos1);
+        if (JT_ListarAlumnos1.getColumnModel().getColumnCount() > 0) {
+            JT_ListarAlumnos1.getColumnModel().getColumn(6).setHeaderValue("Años en Carrera");
+            JT_ListarAlumnos1.getColumnModel().getColumn(7).setHeaderValue("Promedio");
+            JT_ListarAlumnos1.getColumnModel().getColumn(8).setHeaderValue("Facultad");
+        }
+
+        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
+        jPanel19.setLayout(jPanel19Layout);
+        jPanel19Layout.setHorizontalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel19Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 932, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(7, Short.MAX_VALUE))
+        );
+        jPanel19Layout.setVerticalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel19Layout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(55, Short.MAX_VALUE))
+        );
+
+        jTabbedPane5.addTab("Listar", jPanel19);
 
         javax.swing.GroupLayout JD_ListarModficarAlumnosLayout = new javax.swing.GroupLayout(JD_ListarModficarAlumnos.getContentPane());
         JD_ListarModficarAlumnos.getContentPane().setLayout(JD_ListarModficarAlumnosLayout);
         JD_ListarModficarAlumnosLayout.setHorizontalGroup(
             JD_ListarModficarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(JD_ListarModficarAlumnosLayout.createSequentialGroup()
+                .addGap(314, 314, 314)
+                .addComponent(jLabel8)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_ListarModficarAlumnosLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 947, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         JD_ListarModficarAlumnosLayout.setVerticalGroup(
             JD_ListarModficarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_ListarModficarAlumnosLayout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 551, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
+        );
+
+        JB_ModficarMaestro1.setText("MODFICAR MAESTRO");
+        JB_ModficarMaestro1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_ModficarMaestro1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
+        jPanel24.setLayout(jPanel24Layout);
+        jPanel24Layout.setHorizontalGroup(
+            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel24Layout.createSequentialGroup()
+                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addGap(59, 59, 59)
+                        .addComponent(CB_ModficarMaestro1, javax.swing.GroupLayout.PREFERRED_SIZE, 838, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addGap(359, 359, 359)
+                        .addComponent(JB_ModficarMaestro1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
+        jPanel24Layout.setVerticalGroup(
+            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel24Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(CB_ModficarMaestro1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(110, 110, 110)
+                .addComponent(JB_ModficarMaestro1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(269, Short.MAX_VALUE))
+        );
+
+        jTabbedPane7.addTab("Modficar", jPanel24);
+
+        JT_ListarMaestros1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Apellido", "Numero Registro", "Titulo", "Postgrado", "Cantidad Clases", "Facultad"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane8.setViewportView(JT_ListarMaestros1);
+        if (JT_ListarMaestros1.getColumnModel().getColumnCount() > 0) {
+            JT_ListarMaestros1.getColumnModel().getColumn(6).setHeaderValue("Años en Carrera");
+        }
+
+        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
+        jPanel25.setLayout(jPanel25Layout);
+        jPanel25Layout.setHorizontalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel25Layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 880, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
+        );
+        jPanel25Layout.setVerticalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel25Layout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(61, Short.MAX_VALUE))
+        );
+
+        jTabbedPane7.addTab("Listar", jPanel25);
+
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel10.setText("Administracion de Maestros");
+
+        javax.swing.GroupLayout JD_ListarModificarMaestrosLayout = new javax.swing.GroupLayout(JD_ListarModificarMaestros.getContentPane());
+        JD_ListarModificarMaestros.getContentPane().setLayout(JD_ListarModificarMaestrosLayout);
+        JD_ListarModificarMaestrosLayout.setHorizontalGroup(
+            JD_ListarModificarMaestrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_ListarModificarMaestrosLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 935, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28))
+            .addGroup(JD_ListarModificarMaestrosLayout.createSequentialGroup()
+                .addGap(314, 314, 314)
+                .addComponent(jLabel10)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        JD_ListarModificarMaestrosLayout.setVerticalGroup(
+            JD_ListarModificarMaestrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JD_ListarModificarMaestrosLayout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -744,26 +1528,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
 
     private void JB_LoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_LoginMouseClicked
         // TODO add your handling code here:
-        if(TF_Username.getText().equalsIgnoreCase("admin")&&PF_Password.getText().equalsIgnoreCase("1234")){
-            Admin();
-        }else{
-            Administra_Clientes ap=
-            new Administra_Clientes("./Clientes.txt");
-            ap.cargarArchivo();
-            //System.out.println(ap);
-            int check=0;
-            for (int i = 0; i < ap.getListaClientes().size(); i++) {
-                if(ap.getListaClientes().get(i).getUsername().equalsIgnoreCase(TF_Username.getText())&&ap.getListaClientes().get(i).getClave().equalsIgnoreCase(PF_Password.getText())){
-                    check=1;
-                    numero=i;
-                }
-            }
-            if(check==1){
-                Clientes();
-            }else{
-                JOptionPane.showMessageDialog(this, "Su cuenta no existe porfavor registrela");
-            }
-        }
+        
     }//GEN-LAST:event_JB_LoginMouseClicked
 
     private void JB_SalirSistemaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_SalirSistemaMouseClicked
@@ -771,48 +1536,104 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     }//GEN-LAST:event_JB_SalirSistemaMouseClicked
 
     private void JMI_CRUDMaestrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_CRUDMaestrosActionPerformed
-        // TODO add your handling code here:
+        AdminMaestros();
     }//GEN-LAST:event_JMI_CRUDMaestrosActionPerformed
 
     private void JMI_CRUDClasesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_CRUDClasesActionPerformed
-        // TODO add your handling code here:
+        AdminClases();
     }//GEN-LAST:event_JMI_CRUDClasesActionPerformed
 
     private void JMI_CRUDAlumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_CRUDAlumnosActionPerformed
-        // TODO add your handling code here:
+        AdminAlumnos();
     }//GEN-LAST:event_JMI_CRUDAlumnosActionPerformed
 
     private void JMI_CRUDProyectosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_CRUDProyectosActionPerformed
-        // TODO add your handling code here:
+        AdminProyectos();
     }//GEN-LAST:event_JMI_CRUDProyectosActionPerformed
 
     private void JMI_ProyectosMaestroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_ProyectosMaestroActionPerformed
-        // TODO add your handling code here:
+        CRUDMaestroProyecto();
     }//GEN-LAST:event_JMI_ProyectosMaestroActionPerformed
 
     private void JMI_VerClasesAsignadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_VerClasesAsignadasActionPerformed
-        // TODO add your handling code here:
+        ClasesAsignadas();
     }//GEN-LAST:event_JMI_VerClasesAsignadasActionPerformed
 
     private void JMI_MatriculaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_MatriculaActionPerformed
-        // TODO add your handling code here:
+        Matricula();
     }//GEN-LAST:event_JMI_MatriculaActionPerformed
 
     private void JMI_VerInfoClaseProyectoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_VerInfoClaseProyectoActionPerformed
-        // TODO add your handling code here:
+        InfoProyectosAlumnos();
     }//GEN-LAST:event_JMI_VerInfoClaseProyectoActionPerformed
 
     private void JMI_ListarModificarAlumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_ListarModificarAlumnosActionPerformed
-        // TODO add your handling code here:
+        ModificarListarAlumnos();
     }//GEN-LAST:event_JMI_ListarModificarAlumnosActionPerformed
 
     private void JB_SalirCuentaMaestroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_SalirCuentaMaestroMouseClicked
-        // TODO add your handling code here:
+        JD_MenuMaestro.setVisible(false);
     }//GEN-LAST:event_JB_SalirCuentaMaestroMouseClicked
 
     private void JB_SalirCuentaAlumnoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_SalirCuentaAlumnoMouseClicked
-        // TODO add your handling code here:
+        JD_MenuAlumno.setVisible(false);
     }//GEN-LAST:event_JB_SalirCuentaAlumnoMouseClicked
+
+    private void JB_ModficarMaestroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModficarMaestroMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_ModficarMaestroMouseClicked
+
+    private void JB_ELiminarMaestroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ELiminarMaestroMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_ELiminarMaestroMouseClicked
+
+    private void JB_ElminiarAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ElminiarAlumnosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_ElminiarAlumnosMouseClicked
+
+    private void JB_ModificarAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModificarAlumnosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_ModificarAlumnosMouseClicked
+
+    private void JB_ModficarClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModficarClaseMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_ModficarClaseMouseClicked
+
+    private void JB_ElminarClasesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ElminarClasesMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_ElminarClasesMouseClicked
+
+    private void JB_EliminarProyectosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_EliminarProyectosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_EliminarProyectosMouseClicked
+
+    private void JB_ModificarProyectosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModificarProyectosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_ModificarProyectosMouseClicked
+
+    private void JB_ModificarAlumnos1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModificarAlumnos1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_ModificarAlumnos1MouseClicked
+
+    private void JB_AsignarClasesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_AsignarClasesMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_AsignarClasesMouseClicked
+
+    private void JB_ModificarProyectos1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModificarProyectos1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_ModificarProyectos1MouseClicked
+
+    private void JB_EliminarProyectos1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_EliminarProyectos1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_EliminarProyectos1MouseClicked
+
+    private void JB_ModficarMaestro1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModficarMaestro1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_ModficarMaestro1MouseClicked
+
+    private void JMI_ModListarInfoMaestroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_ModListarInfoMaestroActionPerformed
+        ModificarListarMaestros();
+    }//GEN-LAST:event_JMI_ModListarInfoMaestroActionPerformed
 
     
     public void AdminMaestros() {
@@ -864,6 +1685,49 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         JD_MenuAlumno.setVisible(true);
     }//fin del llamado del JDialog
     
+     public void Matricula() {
+        JD_MatriculaAlumnos.pack();
+        JD_MatriculaAlumnos.setModal(true);
+        JD_MatriculaAlumnos.setLocationRelativeTo(this);
+        JD_MatriculaAlumnos.setVisible(true);
+    }//fin del llamado del JDialog
+    
+    public void ClasesAsignadas() {
+        JD_ClasesAsignadasMaestros.pack();
+        JD_ClasesAsignadasMaestros.setModal(true);
+        JD_ClasesAsignadasMaestros.setLocationRelativeTo(this);
+        JD_ClasesAsignadasMaestros.setVisible(true);
+    }//fin del llamado del JDialog
+    
+    public void CRUDMaestroProyecto() {
+        JD_CrudMaestroProyecto.pack();
+        JD_CrudMaestroProyecto.setModal(true);
+        JD_CrudMaestroProyecto.setLocationRelativeTo(this);
+        JD_CrudMaestroProyecto.setVisible(true);
+    }//fin del llamado del JDialog
+    
+    public void ModificarListarAlumnos() {
+        JD_ListarModficarAlumnos.pack();
+        JD_ListarModficarAlumnos.setModal(true);
+        JD_ListarModficarAlumnos.setLocationRelativeTo(this);
+        JD_ListarModficarAlumnos.setVisible(true);
+    }//fin del llamado del JDialog
+    
+    public void InfoProyectosAlumnos() {
+        JD_VerInfoProyectos.pack();
+        JD_VerInfoProyectos.setModal(true);
+        JD_VerInfoProyectos.setLocationRelativeTo(this);
+        JD_VerInfoProyectos.setVisible(true);
+    }//fin del llamado del JDialog
+    
+    public void ModificarListarMaestros() {
+        JD_ListarModificarMaestros.pack();
+        JD_ListarModificarMaestros.setModal(true);
+        JD_ListarModificarMaestros.setLocationRelativeTo(this);
+        JD_ListarModificarMaestros.setVisible(true);
+    }//fin del llamado del JDialog
+    
+    
     
     
     
@@ -904,7 +1768,36 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> CB_ClasesAsignadas;
+    private javax.swing.JComboBox<String> CB_EliminarAlumnos;
+    private javax.swing.JComboBox<String> CB_EliminarClases;
+    private javax.swing.JComboBox<String> CB_EliminarMaestro;
+    private javax.swing.JComboBox<String> CB_EliminarProyectos;
+    private javax.swing.JComboBox<String> CB_EliminarProyectos1;
+    private javax.swing.JComboBox<String> CB_MatriculaAlumno;
+    private javax.swing.JComboBox<String> CB_ModficarMaestro;
+    private javax.swing.JComboBox<String> CB_ModficarMaestro1;
+    private javax.swing.JComboBox<String> CB_ModificarAlumnos;
+    private javax.swing.JComboBox<String> CB_ModificarAlumnos1;
+    private javax.swing.JComboBox<String> CB_ModificarClases;
+    private javax.swing.JComboBox<String> CB_ModificarProyectos;
+    private javax.swing.JComboBox<String> CB_ModificarProyectos1;
+    private javax.swing.JComboBox<String> CB_ProyectosAsignadosClase;
+    private javax.swing.JButton JB_AsignarClases;
+    private javax.swing.JButton JB_ELiminarMaestro;
+    private javax.swing.JButton JB_EliminarProyectos;
+    private javax.swing.JButton JB_EliminarProyectos1;
+    private javax.swing.JButton JB_ElminarClases;
+    private javax.swing.JButton JB_ElminiarAlumnos;
     private javax.swing.JButton JB_Login;
+    private javax.swing.JButton JB_MatricularAlumno;
+    private javax.swing.JButton JB_ModficarClase;
+    private javax.swing.JButton JB_ModficarMaestro;
+    private javax.swing.JButton JB_ModficarMaestro1;
+    private javax.swing.JButton JB_ModificarAlumnos;
+    private javax.swing.JButton JB_ModificarAlumnos1;
+    private javax.swing.JButton JB_ModificarProyectos;
+    private javax.swing.JButton JB_ModificarProyectos1;
     private javax.swing.JButton JB_SalirCuentaAdmin;
     private javax.swing.JButton JB_SalirCuentaAlumno;
     private javax.swing.JButton JB_SalirCuentaMaestro;
@@ -917,6 +1810,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     private javax.swing.JDialog JD_ClasesAsignadasMaestros;
     private javax.swing.JDialog JD_CrudMaestroProyecto;
     private javax.swing.JDialog JD_ListarModficarAlumnos;
+    private javax.swing.JDialog JD_ListarModificarMaestros;
     private javax.swing.JDialog JD_MatriculaAlumnos;
     private javax.swing.JDialog JD_MenuAdmin;
     private javax.swing.JDialog JD_MenuAlumno;
@@ -928,19 +1822,32 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     private javax.swing.JMenuItem JMI_CRUDProyectos;
     private javax.swing.JMenuItem JMI_ListarModificarAlumnos;
     private javax.swing.JMenuItem JMI_Matricula;
+    private javax.swing.JMenuItem JMI_ModListarInfoMaestro;
     private javax.swing.JMenuItem JMI_ProyectosMaestro;
     private javax.swing.JMenuItem JMI_VerClasesAsignadas;
     private javax.swing.JMenuItem JMI_VerInfoClaseProyecto;
+    private javax.swing.JTable JT_ListarAlumnos;
+    private javax.swing.JTable JT_ListarAlumnos1;
+    private javax.swing.JTable JT_ListarClases;
+    private javax.swing.JTable JT_ListarMaestros;
+    private javax.swing.JTable JT_ListarMaestros1;
+    private javax.swing.JTable JT_ListarProyectos;
+    private javax.swing.JTable JT_ListarProyectos1;
+    private javax.swing.JTable JT_ListarProyectosAsignados;
     private javax.swing.JPasswordField PF_Password;
     private javax.swing.JTextField TF_Username;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
@@ -960,7 +1867,15 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel22;
+    private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -968,10 +1883,21 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTabbedPane jTabbedPane4;
+    private javax.swing.JTabbedPane jTabbedPane5;
+    private javax.swing.JTabbedPane jTabbedPane6;
+    private javax.swing.JTabbedPane jTabbedPane7;
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JToolBar jToolBar2;
     private javax.swing.JToolBar jToolBar3;
