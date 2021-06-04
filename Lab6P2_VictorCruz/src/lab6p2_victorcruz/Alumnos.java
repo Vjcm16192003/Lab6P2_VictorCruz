@@ -9,7 +9,7 @@ package lab6p2_victorcruz;
  *
  * @author Victor Jafet Cruz
  */
-public class Alumnos extends Persona{
+public class Alumnos extends Personas{
     private int edad;
     private String ID;
     private String carrera;

@@ -16,21 +16,21 @@ import java.util.Scanner;
  *
  * @author Victor Jafet Cruz
  */
-public class Administrar_Docentes {
-    private ArrayList<Docentes> listaDocentes = new ArrayList();
+public class Administrar_Personas {
+    private ArrayList<Personas> listaPersonas = new ArrayList();
     private File archivo = null;
 //Constructor
-    public Administrar_Docentes(String path) {
+    public Administrar_Personas(String path) {
         archivo= new File(path);
     }
     //Mutador
 
-    public ArrayList<Docentes> getListaDocentes() {
-        return listaDocentes;
+    public ArrayList<Personas> getListaPersonas() {
+        return listaPersonas;
     }
 
-    public void setListaDocentes(ArrayList<Docentes> listaDocentes) {
-        this.listaDocentes = listaDocentes;
+    public void setListaPersonas(ArrayList<Personas> listaPersonas) {
+        this.listaPersonas = listaPersonas;
     }
 
     public File getArchivo() {
@@ -44,7 +44,7 @@ public class Administrar_Docentes {
 
     @Override
     public String toString() {
-        return "Lista Docentes: " + listaDocentes ;
+        return "Lista Personas: " + listaPersonas ;
     }
     //Metodos Administrativos
      public void escribirArchivo() throws IOException {
@@ -53,19 +53,12 @@ public class Administrar_Docentes {
         try {
             fw = new FileWriter(archivo, false);
             bw = new BufferedWriter(fw);
-            for (Docentes t : listaDocentes) {
-                /*
-                private String Titulo;
-    private String Titulo_post;
-    private int cant_clases;
-    private String facultad;
-                */
-                bw.write(t.getTitulo()+ ";");
-                bw.write(t.getTitulo_post()+ ";");
-                bw.write(t.getCant_clases()+ ";");
-                bw.write(t.getFacultad()+ ";");
-                
-                
+            for (Personas t : listaPersonas) {
+                bw.write(t.getNom()+ ";");
+                bw.write(t.getApellido()+ ";");
+                bw.write(t.getNum_registro()+ ";");
+                bw.write(t.getUsername()+ ";");
+                bw.write(t.getPassword() + ";");
             }
             bw.flush();
         } catch (Exception ex) {
@@ -76,17 +69,17 @@ public class Administrar_Docentes {
 
     public void cargarArchivo() {
         Scanner sc = null;
-        listaDocentes = new ArrayList();
+        listaPersonas = new ArrayList();
         if (archivo.exists()) {
             try {
                 sc = new Scanner(archivo);
                 sc.useDelimiter(";");
                 while (sc.hasNext()) {
-                    listaDocentes.add(new Docentes(sc.next(),
+                    listaPersonas.add(new Personas(sc.next(),
                                     sc.next(),
-                                    sc.nextInt(),
+                                    sc.next(),
+                                    sc.next(),
                                     sc.next()
-                                    
                                  )
                     );
                 }
@@ -95,4 +88,4 @@ public class Administrar_Docentes {
             sc.close();
         }//FIN IF
     }//fin del metodo cargar Archivo
-}
+}//fin de la clase

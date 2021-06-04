@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author Victor Jafet Cruz
  */
-public class Docentes extends Persona {
+public class Docentes extends Personas {
      private String Titulo;
     private String Titulo_post;
     private int cant_clases;
@@ -25,6 +25,15 @@ public class Docentes extends Persona {
         this.cant_clases = cant_clases;
         this.facultad = facultad;
     }
+
+    public Docentes(String Titulo, String Titulo_post, int cant_clases, String facultad) {
+        this.Titulo = Titulo;
+        this.Titulo_post = Titulo_post;
+        this.cant_clases = cant_clases;
+        this.facultad = facultad;
+    }
+    
+    
 
     public Docentes() {
     super();

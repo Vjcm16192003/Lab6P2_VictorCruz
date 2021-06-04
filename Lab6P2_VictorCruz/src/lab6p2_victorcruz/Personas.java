@@ -9,14 +9,14 @@ package lab6p2_victorcruz;
  *
  * @author Victor Jafet Cruz
  */
-public class Persona {
+public class Personas {
      private String nom;
     private String apellido;
     private String num_registro;
     private String username;
     private String password;
 
-    public Persona(String nom, String apellido, String num_registro, String username, String password) {
+    public Personas(String nom, String apellido, String num_registro, String username, String password) {
         this.nom = nom;
         this.apellido = apellido;
         this.num_registro = num_registro;
@@ -24,7 +24,7 @@ public class Persona {
         this.password = password;
     }
 
-    public Persona() {
+    public Personas() {
     }
 
     public String getNom() {

@@ -28,6 +28,9 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     private void initComponents() {
 
         JD_MenuAdmin = new javax.swing.JDialog();
+        jToolBar3 = new javax.swing.JToolBar();
+        JB_SalirCuentaAdmin = new javax.swing.JButton();
+        JB_SalirSistemaAdmin = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         JMI_CRUDMaestros = new javax.swing.JMenuItem();
@@ -38,7 +41,23 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         jMenu4 = new javax.swing.JMenu();
         JMI_CRUDProyectos = new javax.swing.JMenuItem();
         JD_MenuMaestro = new javax.swing.JDialog();
+        jToolBar2 = new javax.swing.JToolBar();
+        JB_SalirCuentaMaestro = new javax.swing.JButton();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu5 = new javax.swing.JMenu();
+        JMI_ProyectosMaestro = new javax.swing.JMenuItem();
+        jMenu6 = new javax.swing.JMenu();
+        JMI_VerClasesAsignadas = new javax.swing.JMenuItem();
         JD_MenuAlumno = new javax.swing.JDialog();
+        jToolBar1 = new javax.swing.JToolBar();
+        JB_SalirCuentaAlumno = new javax.swing.JButton();
+        jMenuBar3 = new javax.swing.JMenuBar();
+        jMenu7 = new javax.swing.JMenu();
+        JMI_Matricula = new javax.swing.JMenuItem();
+        jMenu8 = new javax.swing.JMenu();
+        JMI_VerInfoClaseProyecto = new javax.swing.JMenuItem();
+        jMenu9 = new javax.swing.JMenu();
+        JMI_ListarModificarAlumnos = new javax.swing.JMenuItem();
         JD_AdministracionMaestros = new javax.swing.JDialog();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
@@ -67,6 +86,11 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         jPanel15 = new javax.swing.JPanel();
         jPanel16 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
+        JD_CrudMaestroProyecto = new javax.swing.JDialog();
+        JD_ClasesAsignadasMaestros = new javax.swing.JDialog();
+        JD_MatriculaAlumnos = new javax.swing.JDialog();
+        JD_VerInfoProyectos = new javax.swing.JDialog();
+        JD_ListarModficarAlumnos = new javax.swing.JDialog();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -74,6 +98,20 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         PF_Password = new javax.swing.JPasswordField();
         JB_Login = new javax.swing.JButton();
         JB_SalirSistema = new javax.swing.JButton();
+
+        jToolBar3.setRollover(true);
+
+        JB_SalirCuentaAdmin.setText("Salir Cuenta");
+        JB_SalirCuentaAdmin.setFocusable(false);
+        JB_SalirCuentaAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        JB_SalirCuentaAdmin.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar3.add(JB_SalirCuentaAdmin);
+
+        JB_SalirSistemaAdmin.setText("Salir sistema");
+        JB_SalirSistemaAdmin.setFocusable(false);
+        JB_SalirSistemaAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        JB_SalirSistemaAdmin.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar3.add(JB_SalirSistemaAdmin);
 
         jMenu1.setText("Adminstracion Maestros");
 
@@ -129,33 +167,137 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         JD_MenuAdmin.getContentPane().setLayout(JD_MenuAdminLayout);
         JD_MenuAdminLayout.setHorizontalGroup(
             JD_MenuAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 823, Short.MAX_VALUE)
+            .addGroup(JD_MenuAdminLayout.createSequentialGroup()
+                .addComponent(jToolBar3, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 619, Short.MAX_VALUE))
         );
         JD_MenuAdminLayout.setVerticalGroup(
             JD_MenuAdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 520, Short.MAX_VALUE)
+            .addGroup(JD_MenuAdminLayout.createSequentialGroup()
+                .addComponent(jToolBar3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 456, Short.MAX_VALUE))
         );
+
+        jToolBar2.setRollover(true);
+
+        JB_SalirCuentaMaestro.setText("Salir Cuenta");
+        JB_SalirCuentaMaestro.setFocusable(false);
+        JB_SalirCuentaMaestro.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        JB_SalirCuentaMaestro.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JB_SalirCuentaMaestro.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_SalirCuentaMaestroMouseClicked(evt);
+            }
+        });
+        jToolBar2.add(JB_SalirCuentaMaestro);
+
+        jMenu5.setText("Administrar Proyectos");
+
+        JMI_ProyectosMaestro.setText("CRUD Proyectos");
+        JMI_ProyectosMaestro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_ProyectosMaestroActionPerformed(evt);
+            }
+        });
+        jMenu5.add(JMI_ProyectosMaestro);
+
+        jMenuBar2.add(jMenu5);
+
+        jMenu6.setText("Ver Clases Asignadas");
+
+        JMI_VerClasesAsignadas.setText("Ver Tabla de Clases");
+        JMI_VerClasesAsignadas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_VerClasesAsignadasActionPerformed(evt);
+            }
+        });
+        jMenu6.add(JMI_VerClasesAsignadas);
+
+        jMenuBar2.add(jMenu6);
+
+        JD_MenuMaestro.setJMenuBar(jMenuBar2);
 
         javax.swing.GroupLayout JD_MenuMaestroLayout = new javax.swing.GroupLayout(JD_MenuMaestro.getContentPane());
         JD_MenuMaestro.getContentPane().setLayout(JD_MenuMaestroLayout);
         JD_MenuMaestroLayout.setHorizontalGroup(
             JD_MenuMaestroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(JD_MenuMaestroLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jToolBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(560, Short.MAX_VALUE))
         );
         JD_MenuMaestroLayout.setVerticalGroup(
             JD_MenuMaestroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(JD_MenuMaestroLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jToolBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(452, Short.MAX_VALUE))
         );
+
+        jToolBar1.setRollover(true);
+
+        JB_SalirCuentaAlumno.setText("Salir Cuenta");
+        JB_SalirCuentaAlumno.setFocusable(false);
+        JB_SalirCuentaAlumno.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        JB_SalirCuentaAlumno.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JB_SalirCuentaAlumno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_SalirCuentaAlumnoMouseClicked(evt);
+            }
+        });
+        jToolBar1.add(JB_SalirCuentaAlumno);
+
+        jMenu7.setText("Matricula");
+
+        JMI_Matricula.setText("Matricular a un Clase");
+        JMI_Matricula.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_MatriculaActionPerformed(evt);
+            }
+        });
+        jMenu7.add(JMI_Matricula);
+
+        jMenuBar3.add(jMenu7);
+
+        jMenu8.setText("Ver Info de Clase y Proyectos");
+
+        JMI_VerInfoClaseProyecto.setText("Ver Info ");
+        JMI_VerInfoClaseProyecto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_VerInfoClaseProyectoActionPerformed(evt);
+            }
+        });
+        jMenu8.add(JMI_VerInfoClaseProyecto);
+
+        jMenuBar3.add(jMenu8);
+
+        jMenu9.setText("Listar y Modificar Alumnos");
+
+        JMI_ListarModificarAlumnos.setText("Listar/Modficar");
+        JMI_ListarModificarAlumnos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_ListarModificarAlumnosActionPerformed(evt);
+            }
+        });
+        jMenu9.add(JMI_ListarModificarAlumnos);
+
+        jMenuBar3.add(jMenu9);
+
+        JD_MenuAlumno.setJMenuBar(jMenuBar3);
 
         javax.swing.GroupLayout JD_MenuAlumnoLayout = new javax.swing.GroupLayout(JD_MenuAlumno.getContentPane());
         JD_MenuAlumno.getContentPane().setLayout(JD_MenuAlumnoLayout);
         JD_MenuAlumnoLayout.setHorizontalGroup(
             JD_MenuAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(JD_MenuAlumnoLayout.createSequentialGroup()
+                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 542, Short.MAX_VALUE))
         );
         JD_MenuAlumnoLayout.setVerticalGroup(
             JD_MenuAlumnoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(JD_MenuAlumnoLayout.createSequentialGroup()
+                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 440, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -470,6 +612,61 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
                 .addGap(32, 32, 32))
         );
 
+        javax.swing.GroupLayout JD_CrudMaestroProyectoLayout = new javax.swing.GroupLayout(JD_CrudMaestroProyecto.getContentPane());
+        JD_CrudMaestroProyecto.getContentPane().setLayout(JD_CrudMaestroProyectoLayout);
+        JD_CrudMaestroProyectoLayout.setHorizontalGroup(
+            JD_CrudMaestroProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        JD_CrudMaestroProyectoLayout.setVerticalGroup(
+            JD_CrudMaestroProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout JD_ClasesAsignadasMaestrosLayout = new javax.swing.GroupLayout(JD_ClasesAsignadasMaestros.getContentPane());
+        JD_ClasesAsignadasMaestros.getContentPane().setLayout(JD_ClasesAsignadasMaestrosLayout);
+        JD_ClasesAsignadasMaestrosLayout.setHorizontalGroup(
+            JD_ClasesAsignadasMaestrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        JD_ClasesAsignadasMaestrosLayout.setVerticalGroup(
+            JD_ClasesAsignadasMaestrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout JD_MatriculaAlumnosLayout = new javax.swing.GroupLayout(JD_MatriculaAlumnos.getContentPane());
+        JD_MatriculaAlumnos.getContentPane().setLayout(JD_MatriculaAlumnosLayout);
+        JD_MatriculaAlumnosLayout.setHorizontalGroup(
+            JD_MatriculaAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        JD_MatriculaAlumnosLayout.setVerticalGroup(
+            JD_MatriculaAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout JD_VerInfoProyectosLayout = new javax.swing.GroupLayout(JD_VerInfoProyectos.getContentPane());
+        JD_VerInfoProyectos.getContentPane().setLayout(JD_VerInfoProyectosLayout);
+        JD_VerInfoProyectosLayout.setHorizontalGroup(
+            JD_VerInfoProyectosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        JD_VerInfoProyectosLayout.setVerticalGroup(
+            JD_VerInfoProyectosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout JD_ListarModficarAlumnosLayout = new javax.swing.GroupLayout(JD_ListarModficarAlumnos.getContentPane());
+        JD_ListarModficarAlumnos.getContentPane().setLayout(JD_ListarModficarAlumnosLayout);
+        JD_ListarModficarAlumnosLayout.setHorizontalGroup(
+            JD_ListarModficarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        JD_ListarModficarAlumnosLayout.setVerticalGroup(
+            JD_ListarModficarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -589,6 +786,34 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_JMI_CRUDProyectosActionPerformed
 
+    private void JMI_ProyectosMaestroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_ProyectosMaestroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JMI_ProyectosMaestroActionPerformed
+
+    private void JMI_VerClasesAsignadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_VerClasesAsignadasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JMI_VerClasesAsignadasActionPerformed
+
+    private void JMI_MatriculaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_MatriculaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JMI_MatriculaActionPerformed
+
+    private void JMI_VerInfoClaseProyectoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_VerInfoClaseProyectoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JMI_VerInfoClaseProyectoActionPerformed
+
+    private void JMI_ListarModificarAlumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_ListarModificarAlumnosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JMI_ListarModificarAlumnosActionPerformed
+
+    private void JB_SalirCuentaMaestroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_SalirCuentaMaestroMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_SalirCuentaMaestroMouseClicked
+
+    private void JB_SalirCuentaAlumnoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_SalirCuentaAlumnoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JB_SalirCuentaAlumnoMouseClicked
+
     
     public void AdminMaestros() {
         JD_AdministracionMaestros.pack();
@@ -680,18 +905,32 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton JB_Login;
+    private javax.swing.JButton JB_SalirCuentaAdmin;
+    private javax.swing.JButton JB_SalirCuentaAlumno;
+    private javax.swing.JButton JB_SalirCuentaMaestro;
     private javax.swing.JButton JB_SalirSistema;
+    private javax.swing.JButton JB_SalirSistemaAdmin;
     private javax.swing.JDialog JD_AdministracionAlumnos;
     private javax.swing.JDialog JD_AdministracionClases;
     private javax.swing.JDialog JD_AdministracionMaestros;
     private javax.swing.JDialog JD_AdminstracionProyectos;
+    private javax.swing.JDialog JD_ClasesAsignadasMaestros;
+    private javax.swing.JDialog JD_CrudMaestroProyecto;
+    private javax.swing.JDialog JD_ListarModficarAlumnos;
+    private javax.swing.JDialog JD_MatriculaAlumnos;
     private javax.swing.JDialog JD_MenuAdmin;
     private javax.swing.JDialog JD_MenuAlumno;
     private javax.swing.JDialog JD_MenuMaestro;
+    private javax.swing.JDialog JD_VerInfoProyectos;
     private javax.swing.JMenuItem JMI_CRUDAlumnos;
     private javax.swing.JMenuItem JMI_CRUDClases;
     private javax.swing.JMenuItem JMI_CRUDMaestros;
     private javax.swing.JMenuItem JMI_CRUDProyectos;
+    private javax.swing.JMenuItem JMI_ListarModificarAlumnos;
+    private javax.swing.JMenuItem JMI_Matricula;
+    private javax.swing.JMenuItem JMI_ProyectosMaestro;
+    private javax.swing.JMenuItem JMI_VerClasesAsignadas;
+    private javax.swing.JMenuItem JMI_VerInfoClaseProyecto;
     private javax.swing.JPasswordField PF_Password;
     private javax.swing.JTextField TF_Username;
     private javax.swing.JLabel jLabel1;
@@ -705,7 +944,14 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuBar jMenuBar3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -726,5 +972,8 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTabbedPane jTabbedPane4;
+    private javax.swing.JToolBar jToolBar1;
+    private javax.swing.JToolBar jToolBar2;
+    private javax.swing.JToolBar jToolBar3;
     // End of variables declaration//GEN-END:variables
 }
