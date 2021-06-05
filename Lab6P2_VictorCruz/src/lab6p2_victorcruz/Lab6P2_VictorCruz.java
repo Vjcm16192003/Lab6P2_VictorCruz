@@ -265,6 +265,11 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         JB_SalirSistemaAdmin.setFocusable(false);
         JB_SalirSistemaAdmin.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         JB_SalirSistemaAdmin.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        JB_SalirSistemaAdmin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JB_SalirSistemaAdminMouseClicked(evt);
+            }
+        });
         jToolBar3.add(JB_SalirSistemaAdmin);
 
         jMenu1.setText("Adminstracion Maestros");
@@ -2917,6 +2922,10 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         TF_Fecha.setText("");
         JOptionPane.showMessageDialog(this, "Agregado Exitosamente");
     }//GEN-LAST:event_JB_AgregarProyectosMouseClicked
+
+    private void JB_SalirSistemaAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_SalirSistemaAdminMouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_JB_SalirSistemaAdminMouseClicked
 
     public void AdminMaestros() {
         JD_AdministracionMaestros.pack();
