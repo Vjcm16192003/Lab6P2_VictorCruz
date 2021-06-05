@@ -2094,20 +2094,21 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
         for (int i = 0; i < ap.getListaPersonas().size(); i++) {
             if (ap.getListaPersonas().get(i).getUsername().equalsIgnoreCase("Admin") && ap.getListaPersonas().get(i).getPassword().equalsIgnoreCase("1234")) {
                 aux = 1;
+                MenuAdmin();
             } else if (ap.getListaPersonas().get(i).getUsername().equalsIgnoreCase(TF_Username.getText())
                     && ap.getListaPersonas().get(i).getPassword().equalsIgnoreCase(PF_Password.getText())
                     && ap.getListaPersonas().get(i) instanceof Docentes) {
 
                 pos = i;
                 aux = 2;
-
+                MenuMaestro();
             } else if (ap.getListaPersonas().get(i).getUsername().equalsIgnoreCase(TF_Username.getText())
                     && ap.getListaPersonas().get(i).getPassword().equalsIgnoreCase(PF_Password.getText())
                     && ap.getListaPersonas().get(i) instanceof Alumnos) {
 
                 pos = i;
                 aux = 3;
-
+                MenuAlumnos();
             }//fin de las opciones que validan el login
         }//fin del for que recorre la lista de personas
 
@@ -2193,13 +2194,48 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
             CB_ModficarMaestro.setModel(modelo);
             CB_ModficarMaestro1.setModel(modelo);
             CB_EliminarMaestro.setModel(modelo);
-                    
+              JOptionPane.showMessageDialog(this, "Modificado Exitosamente");        
         } catch (IOException ex) {
             Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_JB_ModficarMaestroMouseClicked
 
     private void JB_ELiminarMaestroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ELiminarMaestroMouseClicked
+       try {
+            // TODO add your handling code here:
+            Administrar_Docentes ac=
+                    new Administrar_Docentes("./Docentes.txt");
+            int pos;
+            pos= CB_EliminarMaestro.getSelectedIndex();
+            
+            ac.cargarArchivo();
+            ac.getListaDocentes().remove(pos);
+            ac.escribirArchivo();
+            
+             DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_EliminarMaestro.getModel();
+             modelo.removeElementAt(pos);
+             CB_EliminarMaestro.setModel(modelo);
+             CB_ModficarMaestro.setModel(modelo);
+             CB_ModficarMaestro1.setModel(modelo);
+             
+                if (JT_ListarMaestros.getSelectedRow() >= 0) {
+                    DefaultTableModel modelo1
+                            = (DefaultTableModel) JT_ListarMaestros.getModel();
+                    modelo1.removeRow(pos);
+                    JT_ListarMaestros.setModel(modelo1);
+                    JT_ListarMaestros1.setModel(modelo1);
+                    
+                }
+             docentes =ac.getListaDocentes();
+             JOptionPane.showMessageDialog(this, "Eliminado Exitosamente");
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_JB_ELiminarMaestroMouseClicked
+
+    private void JB_ElminiarAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ElminiarAlumnosMouseClicked
+       
        try {
             // TODO add your handling code here:
             Administrar_Alumnos aa=
@@ -2227,41 +2263,7 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
                     
                 }
              alumnos =aa.getListaAlumnos();
-             
-        } catch (IOException ex) {
-            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_JB_ELiminarMaestroMouseClicked
-
-    private void JB_ElminiarAlumnosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ElminiarAlumnosMouseClicked
-       try {
-            // TODO add your handling code here:
-            Administrar_Docentes ac=
-                    new Administrar_Docentes("./Alumnos.txt");
-            int pos;
-            pos= CB_EliminarMaestro.getSelectedIndex();
-            
-            ac.cargarArchivo();
-            ac.getListaDocentes().remove(pos);
-            ac.escribirArchivo();
-            
-             DefaultComboBoxModel modelo
-                = (DefaultComboBoxModel) CB_EliminarMaestro.getModel();
-             modelo.removeElementAt(pos);
-             CB_EliminarMaestro.setModel(modelo);
-             CB_ModficarMaestro.setModel(modelo);
-             CB_ModficarMaestro1.setModel(modelo);
-             
-                if (JT_ListarMaestros.getSelectedRow() >= 0) {
-                    DefaultTableModel modelo1
-                            = (DefaultTableModel) JT_ListarMaestros.getModel();
-                    modelo1.removeRow(pos);
-                    JT_ListarMaestros.setModel(modelo1);
-                    JT_ListarMaestros1.setModel(modelo1);
-                    
-                }
-             docentes =ac.getListaDocentes();
-             
+              JOptionPane.showMessageDialog(this, "Eliminado Exitosamente");
         } catch (IOException ex) {
             Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2304,46 +2306,323 @@ public class Lab6P2_VictorCruz extends javax.swing.JFrame {
             CB_ModificarAlumnos.setModel(modelo);
             CB_ModificarAlumnos1.setModel(modelo);
             CB_EliminarAlumnos.setModel(modelo);
-                    
+            JOptionPane.showMessageDialog(this, "Modificado Exitosamente");        
         } catch (IOException ex) {
             Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_JB_ModificarAlumnosMouseClicked
 
     private void JB_ModficarClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModficarClaseMouseClicked
-        // TODO add your handling code here:
+      try {
+            Administrar_Clases acla
+                    = new Administrar_Clases("./Clases.txt");
+            int p;
+
+            p = CB_ModificarClases.getSelectedIndex();
+            acla.cargarArchivo();
+            acla.getListaClases().get(p).setCant_max(Integer.parseInt(JOptionPane.showInputDialog("Cantidad Maxima de Alumnos: ")));
+            acla.getListaClases().get(p).setNom(JOptionPane.showInputDialog("Nombre de la clase: "));
+            acla.getListaClases().get(p).setCodigo(Integer.parseInt(JOptionPane.showInputDialog("codigo de la clase: ")));
+            acla.getListaClases().get(p).setCodigo_carrera(Integer.parseInt(JOptionPane.showInputDialog("codigo de la carrera: ")));
+            acla.getListaClases().get(p).setNum_aula(Integer.parseInt(JOptionPane.showInputDialog("numero del Aula: ")));
+            acla.getListaClases().get(p).setSec(JOptionPane.showInputDialog("Seccion: "));
+
+            acla.escribirArchivo();
+            
+            DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_ModificarClases.getModel();
+            ((Clases)modelo.getSelectedItem()).setCant_max(acla.getListaClases().get(p).getCant_max());
+            ((Clases)modelo.getSelectedItem()).setNom(acla.getListaClases().get(p).getNom());
+            ((Clases)modelo.getSelectedItem()).setCodigo(acla.getListaClases().get(p).getCodigo());
+            ((Clases)modelo.getSelectedItem()).setNum_aula(acla.getListaClases().get(p).getNum_aula());
+            ((Clases)modelo.getSelectedItem()).setCodigo_carrera(acla.getListaClases().get(p).getCodigo_carrera());
+            ((Clases)modelo.getSelectedItem()).setSec(acla.getListaClases().get(p).getSec());
+            
+            
+            
+            
+            clases =acla.getListaClases();
+            CB_ModificarClases.setModel(modelo);
+            CB_EliminarClases.setModel(modelo);
+              JOptionPane.showMessageDialog(this, "Modificado Exitosamente");        
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JB_ModficarClaseMouseClicked
 
     private void JB_ElminarClasesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ElminarClasesMouseClicked
-        // TODO add your handling code here:
+       try {
+            // TODO add your handling code here:
+            Administrar_Clases acla=
+                    new Administrar_Clases("./Clases.txt");
+            int pos;
+            pos= CB_EliminarClases.getSelectedIndex();
+            
+            acla.cargarArchivo();
+            acla.getListaClases().remove(pos);
+            acla.escribirArchivo();
+            
+             DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_EliminarClases.getModel();
+             modelo.removeElementAt(pos);
+             CB_ModificarClases.setModel(modelo);
+             CB_EliminarClases.setModel(modelo);
+             CB_ClasesAsignadas.setModel(modelo);
+            
+  
+             
+             
+                if (JT_ListarClases.getSelectedRow() >= 0) {
+                    DefaultTableModel modelo1
+                            = (DefaultTableModel) JT_ListarClases.getModel();
+                    modelo1.removeRow(pos);
+                    JT_ListarClases.setModel(modelo1);
+                    
+                }
+             clases =acla.getListaClases();
+              JOptionPane.showMessageDialog(this, "Eliminado Exitosamente");
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JB_ElminarClasesMouseClicked
 
     private void JB_EliminarProyectosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_EliminarProyectosMouseClicked
-        // TODO add your handling code here:
+       try {
+            // TODO add your handling code here:
+            Administrar_Proyectos ap=
+                    new Administrar_Proyectos("./Proyectos.txt");
+            int pos;
+            pos= CB_EliminarProyectos.getSelectedIndex();
+            
+            ap.cargarArchivo();
+            ap.getListaProyectos().remove(pos);
+            ap.escribirArchivo();
+            
+             DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_EliminarProyectos.getModel();
+             modelo.removeElementAt(pos);
+             CB_ModificarProyectos.setModel(modelo);
+             CB_ModificarProyectos1.setModel(modelo);
+             CB_EliminarProyectos.setModel(modelo);
+             CB_ProyectosAsignadosClase.setModel(modelo);
+  
+             
+             
+                if (JT_ListarProyectos.getSelectedRow() >= 0) {
+                    DefaultTableModel modelo1
+                            = (DefaultTableModel) JT_ListarProyectos.getModel();
+                    modelo1.removeRow(pos);
+                    JT_ListarProyectos.setModel(modelo1);
+                    JT_ListarProyectos1.setModel(modelo1);
+                    JT_ListarProyectosAsignados.setModel(modelo1);
+                    
+                }
+             proyectos =ap.getListaProyectos();
+              JOptionPane.showMessageDialog(this, "Eliminado Exitosamente");
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JB_EliminarProyectosMouseClicked
 
     private void JB_ModificarProyectosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModificarProyectosMouseClicked
-        // TODO add your handling code here:
+        try {
+            Administrar_Proyectos apro
+                    = new Administrar_Proyectos("./Proyectos.txt");
+            int p;
+
+            p = CB_ModificarProyectos.getSelectedIndex();
+            apro.cargarArchivo();
+            apro.getListaProyectos().get(p).setCant_max(Integer.parseInt(JOptionPane.showInputDialog("Cantidad Maxima de Integrantes: ")));
+            apro.getListaProyectos().get(p).setDescrip(JOptionPane.showInputDialog("Descripcion: "));
+            apro.getListaProyectos().get(p).setDificultad(Integer.parseInt(JOptionPane.showInputDialog("Dificultad: ")));
+            apro.getListaProyectos().get(p).setPunta(Integer.parseInt(JOptionPane.showInputDialog("puntaje: ")));
+            apro.getListaProyectos().get(p).setFecha(JOptionPane.showInputDialog("Fecha: "));
+            apro.getListaProyectos().get(p).setTitulo(JOptionPane.showInputDialog("Titulo: "));
+
+            apro.escribirArchivo();
+            
+            DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_ModificarClases.getModel();
+            ((Proyectos)modelo.getSelectedItem()).setCant_max(apro.getListaProyectos().get(p).getCant_max());
+            ((Proyectos)modelo.getSelectedItem()).setDescrip(apro.getListaProyectos().get(p).getDescrip());
+            ((Proyectos)modelo.getSelectedItem()).setFecha(apro.getListaProyectos().get(p).getFecha());
+            ((Proyectos)modelo.getSelectedItem()).setPunta(apro.getListaProyectos().get(p).getPunta());
+            ((Proyectos)modelo.getSelectedItem()).setTiempo(apro.getListaProyectos().get(p).getTiempo());
+            ((Proyectos)modelo.getSelectedItem()).setTitulo(apro.getListaProyectos().get(p).getTitulo());
+             ((Proyectos)modelo.getSelectedItem()).setDificultad(apro.getListaProyectos().get(p).getDificultad());
+            
+            
+            
+            proyectos =apro.getListaProyectos();
+            CB_ModificarProyectos.setModel(modelo);
+            CB_ModificarProyectos1.setModel(modelo);
+            CB_EliminarProyectos1.setModel(modelo);
+              JOptionPane.showMessageDialog(this, "Modificado Exitosamente");        
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JB_ModificarProyectosMouseClicked
 
     private void JB_ModificarAlumnos1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModificarAlumnos1MouseClicked
-        // TODO add your handling code here:
+       try {
+            Administrar_Alumnos aa
+                    = new Administrar_Alumnos("./Alumnos.txt");
+            int p;
+
+            p = CB_ModificarAlumnos.getSelectedIndex();
+            aa.cargarArchivo();
+            aa.getListaAlumnos().get(p).setFacultad(JOptionPane.showInputDialog("Facultad: "));
+            aa.getListaAlumnos().get(p).setNom(JOptionPane.showInputDialog("Nombre del Alumno: "));
+            aa.getListaAlumnos().get(p).setApellido(JOptionPane.showInputDialog("Apellido del Alumno: "));
+            aa.getListaAlumnos().get(p).setA_carrera(Integer.parseInt(JOptionPane.showInputDialog("A de Carrera: ")));
+            aa.getListaAlumnos().get(p).setNum_registro(JOptionPane.showInputDialog("Numero de Registro: "));
+            aa.getListaAlumnos().get(p).setEdad(Integer.parseInt(JOptionPane.showInputDialog("Edad: ")));
+            aa.getListaAlumnos().get(p).setCarrera(JOptionPane.showInputDialog("Carrera: "));
+            aa.getListaAlumnos().get(p).setID(JOptionPane.showInputDialog("ID: "));
+            aa.getListaAlumnos().get(p).setPromedio(Double.parseDouble(JOptionPane.showInputDialog("Promedio: ")));
+
+            aa.escribirArchivo();
+            
+            DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_ModificarAlumnos.getModel();
+            ((Alumnos)modelo.getSelectedItem()).setApellido(aa.getListaAlumnos().get(p).getApellido());
+            ((Alumnos)modelo.getSelectedItem()).setNom(aa.getListaAlumnos().get(p).getNom());
+            ((Alumnos)modelo.getSelectedItem()).setNum_registro(aa.getListaAlumnos().get(p).getNum_registro());
+            ((Alumnos)modelo.getSelectedItem()).setFacultad(aa.getListaAlumnos().get(p).getFacultad());
+            ((Alumnos)modelo.getSelectedItem()).setA_carrera(aa.getListaAlumnos().get(p).getA_carrera());
+            ((Alumnos)modelo.getSelectedItem()).setEdad(aa.getListaAlumnos().get(p).getEdad());
+            ((Alumnos)modelo.getSelectedItem()).setID(aa.getListaAlumnos().get(p).getID());
+            ((Alumnos)modelo.getSelectedItem()).setPromedio(aa.getListaAlumnos().get(p).getPromedio());
+            
+            
+            
+            alumnos =aa.getListaAlumnos();
+            CB_ModificarAlumnos.setModel(modelo);
+            CB_ModificarAlumnos1.setModel(modelo);
+            CB_EliminarAlumnos.setModel(modelo);
+            JOptionPane.showMessageDialog(this, "Modificado Exitosamente");        
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JB_ModificarAlumnos1MouseClicked
 
     private void JB_AsignarClasesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_AsignarClasesMouseClicked
-        // TODO add your handling code here:
+       JOptionPane.showMessageDialog(this, "Clase Asignada");
     }//GEN-LAST:event_JB_AsignarClasesMouseClicked
 
     private void JB_ModificarProyectos1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModificarProyectos1MouseClicked
-        // TODO add your handling code here:
+       try {
+            Administrar_Proyectos apro
+                    = new Administrar_Proyectos("./Proyectos.txt");
+            int p;
+
+            p = CB_ModificarProyectos.getSelectedIndex();
+            apro.cargarArchivo();
+            apro.getListaProyectos().get(p).setCant_max(Integer.parseInt(JOptionPane.showInputDialog("Cantidad Maxima de Integrantes: ")));
+            apro.getListaProyectos().get(p).setDescrip(JOptionPane.showInputDialog("Descripcion: "));
+            apro.getListaProyectos().get(p).setDificultad(Integer.parseInt(JOptionPane.showInputDialog("Dificultad: ")));
+            apro.getListaProyectos().get(p).setPunta(Integer.parseInt(JOptionPane.showInputDialog("puntaje: ")));
+            apro.getListaProyectos().get(p).setFecha(JOptionPane.showInputDialog("Fecha: "));
+            apro.getListaProyectos().get(p).setTitulo(JOptionPane.showInputDialog("Titulo: "));
+
+            apro.escribirArchivo();
+            
+            DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_ModificarClases.getModel();
+            ((Proyectos)modelo.getSelectedItem()).setCant_max(apro.getListaProyectos().get(p).getCant_max());
+            ((Proyectos)modelo.getSelectedItem()).setDescrip(apro.getListaProyectos().get(p).getDescrip());
+            ((Proyectos)modelo.getSelectedItem()).setFecha(apro.getListaProyectos().get(p).getFecha());
+            ((Proyectos)modelo.getSelectedItem()).setPunta(apro.getListaProyectos().get(p).getPunta());
+            ((Proyectos)modelo.getSelectedItem()).setTiempo(apro.getListaProyectos().get(p).getTiempo());
+            ((Proyectos)modelo.getSelectedItem()).setTitulo(apro.getListaProyectos().get(p).getTitulo());
+             ((Proyectos)modelo.getSelectedItem()).setDificultad(apro.getListaProyectos().get(p).getDificultad());
+            
+            
+            
+            proyectos =apro.getListaProyectos();
+            CB_ModificarProyectos.setModel(modelo);
+            CB_ModificarProyectos1.setModel(modelo);
+            CB_EliminarProyectos1.setModel(modelo);
+              JOptionPane.showMessageDialog(this, "Modificado Exitosamente");        
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JB_ModificarProyectos1MouseClicked
 
     private void JB_EliminarProyectos1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_EliminarProyectos1MouseClicked
-        // TODO add your handling code here:
+       try {
+            // TODO add your handling code here:
+            Administrar_Proyectos ap=
+                    new Administrar_Proyectos("./Proyectos.txt");
+            int pos;
+            pos= CB_EliminarProyectos.getSelectedIndex();
+            
+            ap.cargarArchivo();
+            ap.getListaProyectos().remove(pos);
+            ap.escribirArchivo();
+            
+             DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_EliminarProyectos.getModel();
+             modelo.removeElementAt(pos);
+             CB_ModificarProyectos.setModel(modelo);
+             CB_ModificarProyectos1.setModel(modelo);
+             CB_EliminarProyectos.setModel(modelo);
+             CB_ProyectosAsignadosClase.setModel(modelo);
+  
+             
+             
+                if (JT_ListarProyectos.getSelectedRow() >= 0) {
+                    DefaultTableModel modelo1
+                            = (DefaultTableModel) JT_ListarProyectos.getModel();
+                    modelo1.removeRow(pos);
+                    JT_ListarProyectos.setModel(modelo1);
+                    JT_ListarProyectos1.setModel(modelo1);
+                    JT_ListarProyectosAsignados.setModel(modelo1);
+                    
+                }
+             proyectos =ap.getListaProyectos();
+              JOptionPane.showMessageDialog(this, "Eliminado Exitosamente");
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JB_EliminarProyectos1MouseClicked
 
     private void JB_ModficarMaestro1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JB_ModficarMaestro1MouseClicked
-        // TODO add your handling code here:
+       try {
+            Administrar_Docentes ac
+                    = new Administrar_Docentes("./Docentes.txt");
+            int p;
+
+            p = CB_ModficarMaestro.getSelectedIndex();
+            ac.cargarArchivo();
+            ac.getListaDocentes().get(p).setFacultad(JOptionPane.showInputDialog("Facultad: "));
+            ac.getListaDocentes().get(p).setNom(JOptionPane.showInputDialog("Nombre del Maestro: "));
+            ac.getListaDocentes().get(p).setApellido(JOptionPane.showInputDialog("Apellido del Maestro: "));
+            ac.getListaDocentes().get(p).setCant_clases(Integer.parseInt(JOptionPane.showInputDialog("Cantidad de Clases: ")));
+            ac.getListaDocentes().get(p).setNum_registro(JOptionPane.showInputDialog("Numero de Registro: "));
+            ac.getListaDocentes().get(p).setTitulo(JOptionPane.showInputDialog("Nacionalidad: "));
+            ac.getListaDocentes().get(p).setTitulo_post(JOptionPane.showInputDialog("Titulo de Postgrado: "));
+            ac.escribirArchivo();
+            
+            DefaultComboBoxModel modelo
+                = (DefaultComboBoxModel) CB_ModficarMaestro.getModel();
+            ((Docentes)modelo.getSelectedItem()).setApellido(ac.getListaDocentes().get(p).getApellido());
+            ((Docentes)modelo.getSelectedItem()).setNom(ac.getListaDocentes().get(p).getNom());
+            ((Docentes)modelo.getSelectedItem()).setNum_registro(ac.getListaDocentes().get(p).getNum_registro());
+            ((Docentes)modelo.getSelectedItem()).setFacultad(ac.getListaDocentes().get(p).getFacultad());
+            ((Docentes)modelo.getSelectedItem()).setTitulo(ac.getListaDocentes().get(p).getTitulo());
+            ((Docentes)modelo.getSelectedItem()).setTitulo_post(ac.getListaDocentes().get(p).getTitulo_post());
+            ((Docentes)modelo.getSelectedItem()).setCant_clases(ac.getListaDocentes().get(p).getCant_clases());
+            
+            
+            docentes=ac.getListaDocentes();
+            CB_ModficarMaestro.setModel(modelo);
+            CB_ModficarMaestro1.setModel(modelo);
+            CB_EliminarMaestro.setModel(modelo);
+            JOptionPane.showMessageDialog(this, "Modificado Exitosamente");
+        } catch (IOException ex) {
+            Logger.getLogger(Lab6P2_VictorCruz.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JB_ModficarMaestro1MouseClicked
 
     private void JMI_ModListarInfoMaestroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_ModListarInfoMaestroActionPerformed
